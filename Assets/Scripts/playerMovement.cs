@@ -9,15 +9,24 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed = 10f;
     public Rigidbody2D player;
     public Transform gun;
+    public Transform gunTip;
+    private float lastShot;
+    public GameObject bullet;
     
-    
-    
+    void Start()
+    {
+        lastShot = Time.time;
+    }
     void FixedUpdate()
     {
         move();
         look();
     }
 
+    void Update()
+    {
+        shoot();
+    }
     private void look()
     {
         Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
@@ -33,6 +42,17 @@ public class playerMovement : MonoBehaviour
         //Debug.Log($"{Input.GetAxis("Horizontal")}, {Input.GetAxis("Vertical")}");
         Vector2 force = new Vector2(xInput, yInput);
         player.velocity = force;
+    }
+
+    private void shoot()
+    {
+        if(Time.time - lastShot > 1 )
+        {
+            if(!Input.GetButtonDown("Jump"))
+            lastShot = Time.time;
+            GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
+                gunTip.transform.rotation);
+        }
     }
     
     
