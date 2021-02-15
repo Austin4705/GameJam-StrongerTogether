@@ -30,7 +30,7 @@ public class playerMovement : MonoBehaviour
         //TODO: INPUT
         float xInput = Input.GetAxis("Horizontal") * moveSpeed;
         float yInput = Input.GetAxis("Vertical") * moveSpeed;
-        Debug.Log($"{Input.GetAxis("Horizontal")}, {Input.GetAxis("Vertical")}");
+        //Debug.Log($"{Input.GetAxis("Horizontal")}, {Input.GetAxis("Vertical")}");
         Vector2 force = new Vector2(xInput, yInput);
         player.velocity = force;
     }
