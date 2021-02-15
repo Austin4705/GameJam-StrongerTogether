@@ -14,6 +14,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="enemyAI.cs" t="Include" />
+          <e p="enemySpawner.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
         </e>

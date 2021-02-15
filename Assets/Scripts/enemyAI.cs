@@ -26,13 +26,8 @@ public class enemyAI : MonoBehaviour
         dir.y = dir.y / vLength;
         dir.x *= enemySpeed;
         dir.y *= enemySpeed;
-        Debug.Log($"{dir.x}, {dir.y}, {vLength}");
+        //Debug.Log($"{dir.x}, {dir.y}, {vLength}");
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
         enemy.velocity = dir;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
