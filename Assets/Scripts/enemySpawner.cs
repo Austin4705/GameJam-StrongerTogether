@@ -39,50 +39,48 @@ public class enemySpawner : MonoBehaviour
             spawnEnemies();
         }
     }
-
-    private void spawnEnemies()
+    public void spawnEnemies()
+    {
+        int whichSpawn = calcNum();
+        Instantiate(enemy, gameObjects[whichSpawn].transform.position,
+            gameObjects[whichSpawn].transform.rotation);
+    }
+    private int calcNum()
     {
         for(int i = 0; i < 4; i++)
         {
             canSpawn[i] = false;
-            if(isOffScreen(gameObjects[i]))
+            if (isOffScreen(gameObjects[i]))
+            {
                 canSpawn[i] = true;
+            }
         }
-        for (int i = 0; i < 4; i++)
-        {
-               
-        }
-
-        // leftSpawn = false;
-        // rightSpawn = false;
-        // upSpawn = false;
-        // downSpawn = false;
-        // if (isOffScreen(left))
-        // {
-        //     offScreenObjects.Add(left);
-        //     leftSpawn = true;
-        // }
-        // if (isOffScreen(right))
-        // {
-        //     offScreenObjects.Add(right);
-        //     rightSpawn = true;
-        // }
-        // if (isOffScreen(up))
-        // {
-        //     offScreenObjects.Add(up);
-        //     upSpawn = true;
-        // }
-        // if (isOffScreen(down))
-        // {
-        //     offScreenObjects.Add(down);
-        //     downSpawn = true;
-        // }
-        int whichSpawn = Random.Range(0, offScreenObjects.Count);
-        Instantiate(enemy, offScreenObjects[whichSpawn].transform.position,
-            offScreenObjects[whichSpawn].transform.rotation);
-        Debug.Log($"Could of spawned{whichSpawn}");
+        leftSpawn = false;
+        if (canSpawn[0])
+            leftSpawn = true;
+        rightSpawn = false;
+        if (canSpawn[1])
+            rightSpawn = true;
+        upSpawn = false;
+        if (canSpawn[2])
+            upSpawn = true;
+        downSpawn = false;
+        if (canSpawn[3])
+            downSpawn = true;
+        return randomNum();
     }
-
+    private int randomNum()
+    {
+        int tryNum = Random.Range(0, 4);
+        if (canSpawn[tryNum])
+        {
+            return tryNum;
+        }
+        else
+        {
+            return randomNum();
+        }
+    }
     private bool isOffScreen(GameObject obj)
     {
         Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.transform.position.z);
