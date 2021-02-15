@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Dev\GameJam-StrongerTogether" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scenes" t="Include">
+          <e p="Isometric_Tiles_Pixel_Art" t="Include">
+            <e p="License.txt" t="Include" />
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="healthBar.cs" t="Include" />
+          <e p="playerMove.cs" t="Include" />
+        </e>
+        <e p="Sprite" t="Include">
+          <e p="Isometric_Tiles_Pixel_Art" t="Include">
+            <e p="License.txt" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GameJam-StrongerTogether.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+    <e p="C:\Users\nikhi\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\nikhi\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GameJam-StrongerTogether.1310527530.00" t="ExcludeRecursive" />
+  </component>
+</project>
