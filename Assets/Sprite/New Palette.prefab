@@ -41,6 +41,15 @@ Tilemap:
   m_GameObject: {fileID: 676885646286629820}
   m_Enabled: 1
   m_Tiles:
+  - first: {x: -22, y: -18, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 6
+      m_TileSpriteIndex: 6
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -109,6 +118,8 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: e69f7c146c6f5a5409def4eef8dfd08d, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: 2da0d966504d5da4591596cc7bfba2e0, type: 2}
+  - m_RefCount: 1
+    m_Data: {fileID: 11400000, guid: cd5f6488b8b94ac49bc8b84c6539e049, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 2c71663d51060fe48b5c3fb0fb251595, type: 3}
@@ -122,8 +133,10 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: a1ed6d56e1a32de418eb988f6df6a9ca, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 21300000, guid: 86bb28c2eeac9ea40a6535da6b3ec38c, type: 3}
+  - m_RefCount: 1
+    m_Data: {fileID: 21300000, guid: 2a59ba0910b628b40a6e1849b0466e04, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 5
+  - m_RefCount: 6
     m_Data:
       e00: 1
       e01: 0
@@ -178,15 +191,15 @@ Tilemap:
       e32: 4.5904e-41
       e33: 0
   m_TileColorArray:
-  - m_RefCount: 6
+  - m_RefCount: 7
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
     m_Data: {r: 174.1294, g: 174.1294, b: 174.1294, a: 174.1294}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -6, y: -5, z: 0}
-  m_Size: {x: 12, y: 11, z: 5}
+  m_Origin: {x: -23, y: -18, z: 0}
+  m_Size: {x: 29, y: 24, z: 5}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -246,7 +259,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 0.012919784, y: 0.006459713, z: 0}
+  m_ChunkCullingBounds: {x: 14, y: 6.75, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3
