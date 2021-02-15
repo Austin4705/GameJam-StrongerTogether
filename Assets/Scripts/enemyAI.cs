@@ -17,6 +17,11 @@ public class enemyAI : MonoBehaviour
     {
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         float vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
+        if (vLength <= 1f)
+        {
+            dir.x = 0;
+            dir.y = 0;
+        }
         dir.x = dir.x / vLength;
         dir.y = dir.y / vLength;
         dir.x *= enemySpeed;

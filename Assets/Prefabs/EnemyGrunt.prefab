@@ -152,4 +152,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 4321138359115017356}
   player: {fileID: 0}
-  enemySpeed: 0.005
+  enemySpeed: 3
