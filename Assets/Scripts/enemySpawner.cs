@@ -19,6 +19,7 @@ public class enemySpawner : MonoBehaviour
     private GameObject[] gameObjects = new GameObject[4];
     public bool[] canSpawn = new bool[4];
     public GameObject enemy;
+    public GameObject enemyHierarchy;
     
     // Start is called before the first frame update
     void Start()
@@ -42,8 +43,9 @@ public class enemySpawner : MonoBehaviour
     public void spawnEnemies()
     {
         int whichSpawn = calcNum();
-        Instantiate(enemy, gameObjects[whichSpawn].transform.position,
+        GameObject newObj = GameObject.Instantiate(enemy, gameObjects[whichSpawn].transform.position,
             gameObjects[whichSpawn].transform.rotation);
+        newObj.transform.parent = enemyHierarchy.transform;
     }
     private int calcNum()
     {
