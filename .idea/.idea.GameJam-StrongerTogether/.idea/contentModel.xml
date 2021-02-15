@@ -10,8 +10,9 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="enemyAI.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
-          <e p="playerMove.cs" t="Include" />
+          <e p="playerMovement.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
