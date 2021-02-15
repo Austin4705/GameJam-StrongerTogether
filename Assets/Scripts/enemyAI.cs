@@ -10,7 +10,7 @@ public class enemyAI : MonoBehaviour
     public float enemySpeed = .005f;
     void Start()
     {
-        
+        player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void FixedUpdate()
