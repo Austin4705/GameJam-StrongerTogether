@@ -9,12 +9,9 @@ public class playerMovement : MonoBehaviour
     public float moveSpeed = 10f;
     public Rigidbody2D player;
     public Transform gun;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-    //Update is called once per frame
+    
+    
+    
     void FixedUpdate()
     {
         move();
@@ -28,7 +25,6 @@ public class playerMovement : MonoBehaviour
         float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
     }
-    
     private void move()
     {
         //TODO: INPUT
@@ -37,7 +33,6 @@ public class playerMovement : MonoBehaviour
         Debug.Log($"{Input.GetAxis("Horizontal")}, {Input.GetAxis("Vertical")}");
         Vector2 force = new Vector2(xInput, yInput);
         player.velocity = force;
-        //player.Move(force);
     }
     
     
