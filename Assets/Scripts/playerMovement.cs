@@ -50,11 +50,14 @@ public class playerMovement : MonoBehaviour
     {
         if(Time.time - lastShot > 1 / shotsPerMinute)
         {
-            if(!Input.GetButtonDown("Jump"))
-            lastShot = Time.time;
-            GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
-                gunTip.transform.rotation);
-            newObj.transform.parent = bulletStorage.transform;
+            if (Input.GetButton("Jump"))
+            {
+                lastShot = Time.time;
+                GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
+                    gunTip.transform.rotation);
+                newObj.transform.parent = bulletStorage.transform;
+            }
+
         }
     }
     
