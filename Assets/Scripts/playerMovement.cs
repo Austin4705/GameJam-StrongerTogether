@@ -12,6 +12,8 @@ public class playerMovement : MonoBehaviour
     public Transform gunTip;
     private float lastShot;
     public GameObject bullet;
+    public GameObject bulletStorage;
+    public float shotsPerMinute = 3;
     
     void Start()
     {
@@ -46,12 +48,13 @@ public class playerMovement : MonoBehaviour
 
     private void shoot()
     {
-        if(Time.time - lastShot > 1 )
+        if(Time.time - lastShot > 1 / shotsPerMinute)
         {
             if(!Input.GetButtonDown("Jump"))
             lastShot = Time.time;
             GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
                 gunTip.transform.rotation);
+            newObj.transform.parent = bulletStorage.transform;
         }
     }
     

@@ -7,19 +7,18 @@ public class bullet : MonoBehaviour
     public float damage = 10;
     public float speed = 20f;
     public Rigidbody2D rb;
+    public float time;
     // Start is called before the first frame update
     void Start()
     {
         rb.velocity = transform.up * speed;
+        time = Time.time;
     }
-    protected virtual void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.tag == "Enemy")
-            Destroy(gameObject);
-    }
-    // Update is called once per frame
     void Update()
     {
-        
+        if (Time.time - time > 15)
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
