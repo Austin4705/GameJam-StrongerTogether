@@ -19,6 +19,7 @@
           <e p="enemySpawner.cs" t="Include" />
           <e p="gruntEnemyAI.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
+          <e p="playerHealth.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">
