@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemyAI : MonoBehaviour
+public class gruntEnemyAI : MonoBehaviour
 {
     // Start is called before the first frame update
     public Rigidbody2D enemy;

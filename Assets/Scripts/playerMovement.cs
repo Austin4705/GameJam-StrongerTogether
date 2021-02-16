@@ -57,10 +57,6 @@ public class playerMovement : MonoBehaviour
                     gunTip.transform.rotation);
                 newObj.transform.parent = bulletStorage.transform;
             }
-
         }
     }
-    
-    
-    
 }
