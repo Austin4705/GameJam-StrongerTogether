@@ -70,7 +70,10 @@ public class chargeEnemyAI : MonoBehaviour
             //if charge times still going
             if (Time.time - time < chargeTime)
             {
-                enemy.velocity = chargeDirection * enemySpeed * speedChargeMultiplier;
+                Vector2 direction = chargeDirection * enemySpeed * speedChargeMultiplier;
+                enemy.velocity = direction;
+                Debug.DrawRay(this.transform.position, new Vector3(direction.x, direction.y, 0));
+
             }
             //charge time is up
             else
@@ -78,6 +81,7 @@ public class chargeEnemyAI : MonoBehaviour
                 isCharging = false;
                 enemy.velocity = Vector2.zero;
                 lastCharge = Time.time;
+
             }
             //if touching player end charge
             if (touchingPlayer)

@@ -22,7 +22,13 @@
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt 1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt 1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +40,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/enemySpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/0d/ae84590c/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/a0/a35b83fb/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/bd/80c54866/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/gruntEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,9 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/enemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gruntEnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
       </list>
     </option>
   </component>
@@ -198,14 +205,15 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="375" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613441353868" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1613427340289">
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1613503425691">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613424336752" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613427340289" />
-    <state x="-1304" y="240" key="run.anything.popup" timestamp="1613461297748">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613503425691" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1613503266060">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613461297748" />
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613503266060" />
   </component>
 </project>

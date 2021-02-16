@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8340695768982147489}
   m_Layer: 0
   m_Name: EnemyGrunt 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   isCharging: 0
   touchingPlayer: 0
   chargeTimeSpace: 2
+  inCoolDown: 0
 --- !u!50 &2715807291362483508
 Rigidbody2D:
   serializedVersion: 4
@@ -207,3 +208,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 300
+  maxHealth: 100
+  playerDamage: 2
