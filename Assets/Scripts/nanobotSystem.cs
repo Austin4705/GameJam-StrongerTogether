@@ -11,7 +11,6 @@ public class nanobotSystem : MonoBehaviour
     public int[] abilityPrice = {5, 20, 40, 60, 100};
     public GameObject player;
     public float hitCooldown;
-    public bool lowerHealth;
     public bool devInvinsible = true;
     public bool invinsible;
     public float invinsibilityTimer = 0;
@@ -82,7 +81,6 @@ public class nanobotSystem : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Damage(other.gameObject.GetComponent<enemyDamage>().playerDamage);
-            //lowerHealth = true;
         }
     }
 }
