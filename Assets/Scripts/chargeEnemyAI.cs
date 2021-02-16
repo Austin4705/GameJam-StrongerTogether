@@ -73,7 +73,6 @@ public class chargeEnemyAI : MonoBehaviour
                 Vector2 direction = chargeDirection * enemySpeed * speedChargeMultiplier;
                 enemy.velocity = direction;
                 Debug.DrawRay(this.transform.position, new Vector3(direction.x, direction.y, 0));
-
             }
             //charge time is up
             else
@@ -106,7 +105,7 @@ public class chargeEnemyAI : MonoBehaviour
         enemy.velocity = dir;
     }
     
-    protected virtual void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerStay2D(Collider2D other)
     {
         if (other.gameObject.tag == "Player")
         {

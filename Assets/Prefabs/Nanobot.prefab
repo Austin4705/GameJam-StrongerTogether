@@ -48,7 +48,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 6999940612383091594}
   player: {fileID: 0}
-  enemySpeed: 2
+  enemySpeed: 5
 --- !u!212 &4034201736821764063
 SpriteRenderer:
   m_ObjectHideFlags: 0

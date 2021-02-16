@@ -8,6 +8,7 @@ TagManager:
   - Bullet
   - Enemy
   - Nanobot
+  - Collider
   layers:
   - Default
   - TransparentFX
@@ -17,8 +18,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Border
+  - Bullet
   - 
   - 
   - 

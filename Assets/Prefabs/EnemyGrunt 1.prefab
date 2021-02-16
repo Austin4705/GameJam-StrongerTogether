@@ -9,12 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2715807291362483465}
+  - component: {fileID: 8340695768982147489}
+  - component: {fileID: 8402714694735243523}
   - component: {fileID: 2715807291362483510}
   - component: {fileID: 2715807291362483511}
-  - component: {fileID: 8402714694735243523}
   - component: {fileID: 2715807291362483508}
-  - component: {fileID: 1135609421438413245}
-  - component: {fileID: 8340695768982147489}
   m_Layer: 0
   m_Name: EnemyGrunt 1
   m_TagString: Enemy
@@ -36,6 +35,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8340695768982147489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715807291362483506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d7ddb07385d32a4280e90e9c290c536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 300
+  maxHealth: 100
+  playerDamage: 2
+  nanobotsOnDeath: 2
+  nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
+--- !u!114 &8402714694735243523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2715807291362483506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729ba45c46d05a04ebb63054518af70b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2715807291362483508}
+  player: {fileID: 0}
+  enemySpeed: 5
+  chargeRange: 3
+  speedChargeMultiplier: 1.5
+  chargeTime: 3
+  isCharging: 0
+  touchingPlayer: 0
+  chargeTimeSpace: 2
+  inCoolDown: 0
 --- !u!212 &2715807291362483510
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -119,28 +157,6 @@ PolygonCollider2D:
       - {x: 0.5096898, y: -0.30604026}
       - {x: 0.5096898, y: 0.31895974}
       - {x: 0.07218984, y: 0.5064597}
---- !u!114 &8402714694735243523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715807291362483506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 729ba45c46d05a04ebb63054518af70b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy: {fileID: 2715807291362483508}
-  player: {fileID: 0}
-  enemySpeed: 5
-  chargeRange: 3
-  speedChargeMultiplier: 1.5
-  chargeTime: 3
-  isCharging: 0
-  touchingPlayer: 0
-  chargeTimeSpace: 2
-  inCoolDown: 0
 --- !u!50 &2715807291362483508
 Rigidbody2D:
   serializedVersion: 4
@@ -162,53 +178,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &1135609421438413245
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715807291362483506}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.49031016, y: 0.49354026}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.13093516, y: 0.5064597}
-      - {x: -0.49031016, y: 0.30333474}
-      - {x: -0.49031016, y: -0.38416526}
-      - {x: -0.13093516, y: -0.49354026}
-      - {x: 0.22843984, y: -0.49354026}
-      - {x: 0.5096898, y: -0.30604026}
-      - {x: 0.5096898, y: 0.31895974}
-      - {x: 0.07218984, y: 0.5064597}
---- !u!114 &8340695768982147489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2715807291362483506}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d7ddb07385d32a4280e90e9c290c536, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 300
-  maxHealth: 100
-  playerDamage: 2
-  nanobotsOnDeath: 2
-  nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}

@@ -25,7 +25,7 @@ public class enemyDamage : MonoBehaviour
     public void damage(float damage)
     {
         //for dumb two colliders
-        health = health - (.5f * damage);
+        health = health - (damage);
         if (health < 0)
         {
             enemyDie();            
@@ -50,8 +50,8 @@ public class enemyDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            damage(other.gameObject.GetComponent<bullet>().damage);
             Destroy(other.gameObject);
+            damage(other.gameObject.GetComponent<bullet>().damage);
         }
     }
 }
