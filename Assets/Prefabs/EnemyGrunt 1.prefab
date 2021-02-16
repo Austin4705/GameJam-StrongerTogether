@@ -210,3 +210,5 @@ MonoBehaviour:
   health: 300
   maxHealth: 100
   playerDamage: 2
+  nanobotsOnDeath: 2
+  nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}

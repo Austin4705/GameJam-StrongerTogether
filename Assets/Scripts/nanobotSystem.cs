@@ -77,6 +77,7 @@ public class nanobotSystem : MonoBehaviour
         if (other.gameObject.tag == "Nanobot")
         {
             addNanobot();
+            Destroy(other.gameObject);
         }
         if (other.gameObject.tag == "Enemy")
         {
