@@ -14,6 +14,7 @@ public class playerMovement : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletStorage;
     public float shotsPerSecond = 3;
+    public float angle;
     
     void Start()
     {
@@ -33,7 +34,7 @@ public class playerMovement : MonoBehaviour
     {
         Vector3 dir = Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position);
         //TODO: INPUT
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
     }
     private void move()
