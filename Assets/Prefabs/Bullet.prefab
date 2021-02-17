@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3126402420713810333}
   - component: {fileID: 3126402420713810332}
   - component: {fileID: 3126402420713810331}
-  - component: {fileID: 3126402420713810330}
   - component: {fileID: 3126402420713810329}
-  m_Layer: 0
+  - component: {fileID: 5183447356744764105}
+  m_Layer: 9
   m_Name: Bullet
   m_TagString: Bullet
   m_Icon: {fileID: 0}
@@ -96,11 +96,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ace5cda718956bc48a172718cc343a5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  damage: 30
   speed: 10
   rb: {fileID: 3126402420713810329}
   time: 0
---- !u!60 &3126402420713810330
+--- !u!50 &3126402420713810329
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3126402420713810328}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!60 &5183447356744764105
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,24 +154,3 @@ PolygonCollider2D:
       - {x: 0.089999996, y: -0.59999996}
       - {x: 0.25, y: -0.53999996}
       - {x: 0.25, y: 0.51}
---- !u!50 &3126402420713810329
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3126402420713810328}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4

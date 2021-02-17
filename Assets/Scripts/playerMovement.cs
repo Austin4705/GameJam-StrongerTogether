@@ -13,7 +13,7 @@ public class playerMovement : MonoBehaviour
     private float lastShot;
     public GameObject bullet;
     public GameObject bulletStorage;
-    public float shotsPerMinute = 3;
+    public float shotsPerSecond = 3;
     
     void Start()
     {
@@ -48,7 +48,7 @@ public class playerMovement : MonoBehaviour
 
     private void shoot()
     {
-        if(Time.time - lastShot > 1 / shotsPerMinute)
+        if(Time.time - lastShot > 1 / shotsPerSecond)
         {
             if (Input.GetButton("Jump"))
             {

@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class bullet : MonoBehaviour
+public class enemyBullet : MonoBehaviour
 {
-    public float damage = 10;
     public float speed = 20f;
     public Rigidbody2D rb;
     public float time;
@@ -23,7 +22,7 @@ public class bullet : MonoBehaviour
     }
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
         }

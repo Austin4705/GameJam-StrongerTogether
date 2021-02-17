@@ -7,6 +7,9 @@ TagManager:
   - Spawner
   - Bullet
   - Enemy
+  - Nanobot
+  - Collider
+  - Wall
   layers:
   - Default
   - TransparentFX
@@ -16,8 +19,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - Border
+  - Bullet
   - 
   - 
   - 
@@ -44,6 +47,12 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
+  - name: Entities
     uniqueID: 25631527
+    locked: 0
+  - name: Fence
+    uniqueID: 3674635793
+    locked: 0
+  - name: New Layer
+    uniqueID: 3412837111
     locked: 0

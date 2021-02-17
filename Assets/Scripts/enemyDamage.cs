@@ -7,7 +7,9 @@ public class enemyDamage : MonoBehaviour
     public float health = 100;
     public float maxHealth = 100;
     public int playerDamage;
-    
+    public int nanobotsOnDeath;
+    public GameObject nanobot;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +25,7 @@ public class enemyDamage : MonoBehaviour
     public void damage(float damage)
     {
         //for dumb two colliders
-        health = health - (.5f * damage);
+        health = health - (damage);
         if (health < 0)
         {
             enemyDie();            
@@ -33,13 +35,23 @@ public class enemyDamage : MonoBehaviour
     public void enemyDie()
     {
         Destroy(this.gameObject);
+        dropNanobots();
+    }
+
+    private void dropNanobots()
+    {
+        for (int i = 0; i < nanobotsOnDeath; i++)
+        {
+            GameObject newObj = GameObject.Instantiate(nanobot, gameObject.transform.position, 
+                gameObject.transform.rotation);
+        }
     }
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Bullet")
         {
-            damage(other.gameObject.GetComponent<bullet>().damage);
             Destroy(other.gameObject);
+            damage(other.gameObject.GetComponent<bullet>().damage);
         }
     }
 }
