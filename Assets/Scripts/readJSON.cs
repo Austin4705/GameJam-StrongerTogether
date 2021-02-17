@@ -5,21 +5,29 @@ using UnityEngine;
 public class readJSON : MonoBehaviour
 {
     public TextAsset jsonFile;
-
+    public rounds level;
+    
     // Start is called before the first frame update
     void Start()
     {
-        rounds level = JsonUtility.FromJson<rounds>(jsonFile.text);
- 
+        level = JsonUtility.FromJson<rounds>(jsonFile.text);
+        
+        //printing rounds
         foreach (round Round in level.eachRound)
         {
             Debug.Log(
                 "roundID: " + Round.roundID + " " + 
                 "roundID: " + Round.grunt + " " +
-                "charge: " + Round.charge + " " +
-                "ranged: " + Round.ranged + " " +
                 "roundTime: " + Round.roundTime + " "
-                );
+            );
+                foreach (Special special in Round.special)
+                {
+                    Debug.Log(
+                        "type: " + special.type + " " + 
+                        "time: " + special.time + " " +
+                        "amount: " + special.amount + " "
+                    );
+                }
         }
     }
 }

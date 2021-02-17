@@ -47,12 +47,10 @@ public class enemySpawner : MonoBehaviour
     {
         spawnEnemies(enemyGrunt);
     }
-
     public void spawnCharged()
     {
         spawnEnemies(enemyCharge);
     }
-
     public void spawnRanged()
     {
         spawnEnemies(enemyRanged);
