@@ -8,6 +8,8 @@ public class gruntEnemyAI : MonoBehaviour
     public Rigidbody2D enemy;
     public GameObject player;
     public float enemySpeed = .005f;
+    public float angle;
+    
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
@@ -17,6 +19,8 @@ public class gruntEnemyAI : MonoBehaviour
     {
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         float vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        
         if (vLength <= 1f)
         {
             dir.x = 0;

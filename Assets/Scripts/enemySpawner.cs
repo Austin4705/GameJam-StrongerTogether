@@ -34,11 +34,11 @@ public class enemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Time.time - lastSpawned > 1 / enemiesPerSecond)
-        {
-            lastSpawned = Time.time;
-            spawnEnemies();
-        }
+        // if(Time.time - lastSpawned > 1 / enemiesPerSecond)
+        // {
+        //     lastSpawned = Time.time;
+        //     spawnEnemies();
+        // }
     }
     public void spawnEnemies()
     {

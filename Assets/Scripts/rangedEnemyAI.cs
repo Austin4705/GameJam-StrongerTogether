@@ -17,6 +17,8 @@ public class rangedEnemyAI : MonoBehaviour
     public GameObject gunTip;
     public GameObject enemyBulletStorage;
     private float lastShot;
+    public float angle;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -65,7 +67,7 @@ public class rangedEnemyAI : MonoBehaviour
     void shoot()
     {
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
-        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
 
@@ -83,5 +85,6 @@ public class rangedEnemyAI : MonoBehaviour
         dir = (dir / vLength) * enemySpeed;
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
         enemy.velocity = dir;
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
     }
 }
