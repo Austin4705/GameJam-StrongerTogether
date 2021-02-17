@@ -26,6 +26,7 @@
           <e p="rangedEnemyAI.cs" t="Include" />
           <e p="readJSON.cs" t="Include" />
           <e p="round.cs" t="Include" />
+          <e p="roundManager.cs" t="Include" />
           <e p="rounds.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">

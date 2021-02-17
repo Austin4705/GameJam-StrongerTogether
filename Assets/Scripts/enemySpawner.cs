@@ -18,7 +18,9 @@ public class enemySpawner : MonoBehaviour
 
     private GameObject[] gameObjects = new GameObject[4];
     public bool[] canSpawn = new bool[4];
-    public GameObject enemy;
+    public GameObject enemyGrunt;
+    public GameObject enemyCharge;
+    public GameObject enemyRanged;
     public GameObject enemyHierarchy;
     
     // Start is called before the first frame update
@@ -40,7 +42,23 @@ public class enemySpawner : MonoBehaviour
         //     spawnEnemies();
         // }
     }
-    public void spawnEnemies()
+
+    public void spawnGrunt()
+    {
+        spawnEnemies(enemyGrunt);
+    }
+
+    public void spawnCharged()
+    {
+        spawnEnemies(enemyCharge);
+    }
+
+    public void spawnRanged()
+    {
+        spawnEnemies(enemyRanged);
+    }
+    #region enemyCalculation 
+    private void spawnEnemies(GameObject enemy)
     {
         int whichSpawn = calcNum();
         GameObject newObj = GameObject.Instantiate(enemy, gameObjects[whichSpawn].transform.position,
@@ -60,12 +78,15 @@ public class enemySpawner : MonoBehaviour
         leftSpawn = false;
         if (canSpawn[0])
             leftSpawn = true;
+        
         rightSpawn = false;
         if (canSpawn[1])
             rightSpawn = true;
+        
         upSpawn = false;
         if (canSpawn[2])
             upSpawn = true;
+        
         downSpawn = false;
         if (canSpawn[3])
             downSpawn = true;
@@ -88,9 +109,9 @@ public class enemySpawner : MonoBehaviour
         Vector3 screenCenter = new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.transform.position.z);
         Vector3 screenHeight = new Vector3(Screen.width / 2, Screen.height, Camera.main.transform.position.z);
         Vector3 screenWidth = new Vector3(Screen.width, Screen.height/2, Camera.main.transform.position.z);
-        Vector3 goscreen = Camera.main.WorldToScreenPoint(obj.transform.position);
-        float distX = Vector3.Distance(new Vector3(Screen.width / 2, 0f, 0f), new Vector3(goscreen.x, 0f,0f));
-        float distY = Vector3.Distance(new Vector3(0f, Screen.height / 2, 0f), new Vector3(0f, goscreen.y, 0f));
+        Vector3 goScreen = Camera.main.WorldToScreenPoint(obj.transform.position);
+        float distX = Vector3.Distance(new Vector3(Screen.width / 2, 0f, 0f), new Vector3(goScreen.x, 0f,0f));
+        float distY = Vector3.Distance(new Vector3(0f, Screen.height / 2, 0f), new Vector3(0f, goScreen.y, 0f));
         if(distX > Screen.width / 2 || distY > Screen.height / 2)
         {
             return true;
@@ -100,4 +121,5 @@ public class enemySpawner : MonoBehaviour
             return false;
         }
     }
+    #endregion
 }
