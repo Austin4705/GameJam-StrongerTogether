@@ -18,10 +18,7 @@ public class nanobotAI : MonoBehaviour
     {
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         float vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
-        dir.x = dir.x / vLength;
-        dir.y = dir.y / vLength;
-        dir.x *= enemySpeed;
-        dir.y *= enemySpeed;
+        dir = (dir / vLength) * enemySpeed;
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
         enemy.velocity = dir;
     }

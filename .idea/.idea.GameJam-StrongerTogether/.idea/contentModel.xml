@@ -15,6 +15,7 @@
         <e p="Scripts" t="Include">
           <e p="bullet.cs" t="Include" />
           <e p="chargeEnemyAI.cs" t="Include" />
+          <e p="enemyBullet.cs" t="Include" />
           <e p="enemyDamage.cs" t="Include" />
           <e p="enemySpawner.cs" t="Include" />
           <e p="gruntEnemyAI.cs" t="Include" />
@@ -22,6 +23,7 @@
           <e p="nanobotAI.cs" t="Include" />
           <e p="nanobotSystem.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
+          <e p="rangedEnemyAI.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">

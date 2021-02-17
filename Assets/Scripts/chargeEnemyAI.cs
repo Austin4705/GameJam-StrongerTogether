@@ -96,10 +96,7 @@ public class chargeEnemyAI : MonoBehaviour
 
     void follow()
     {
-        dir.x = dir.x / vLength;
-        dir.y = dir.y / vLength;
-        dir.x *= enemySpeed;
-        dir.y *= enemySpeed;
+        dir = (dir / vLength) * enemySpeed;
         //Debug.Log($"{dir.x}, {dir.y}, {vLength}");
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0));
         enemy.velocity = dir;
