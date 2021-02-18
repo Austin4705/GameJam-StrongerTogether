@@ -40,7 +40,7 @@ public class playerMovement : MonoBehaviour
         stateTransform[5] = backRight;
         stateTransform[6] = right;
         stateTransform[7] = frontRight;
-    }
+    }k
     void FixedUpdate()
     {
         move();
@@ -80,7 +80,7 @@ public class playerMovement : MonoBehaviour
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         animator.SetFloat("Angle", angle);
         gunTip.transform.position = stateTransform[state].position;
-        gunTip.transform.rotation = Quaternion.AngleAxis(angle+270, Vector3.forward);
+        gunTip.transform.rotation = stateTransform[state].rotation;
     }
     private void move()
     {
