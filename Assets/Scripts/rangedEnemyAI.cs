@@ -27,6 +27,7 @@ public class rangedEnemyAI : MonoBehaviour
 
         lastShot = Time.time;
         player = GameObject.FindGameObjectWithTag("Player");
+        enemyBulletStorage = GameObject.FindGameObjectWithTag("enemyBulletStorage");
     }
 
     // Update is called once per frame
