@@ -18,10 +18,13 @@ public class rangedEnemyAI : MonoBehaviour
     public GameObject enemyBulletStorage;
     private float lastShot;
     public float angle;
-    
+    public Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
+
         lastShot = Time.time;
         player = GameObject.FindGameObjectWithTag("Player");
     }
@@ -34,6 +37,7 @@ public class rangedEnemyAI : MonoBehaviour
 
     void FixedUpdate()
     {
+        animator.SetFloat("Angle", angle);
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         float vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
         if (vLength <= shootingRange)
@@ -68,6 +72,9 @@ public class rangedEnemyAI : MonoBehaviour
     {
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        
+        
+
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
 

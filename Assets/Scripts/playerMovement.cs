@@ -19,6 +19,7 @@ public class playerMovement : MonoBehaviour
     
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         lastShot = Time.time;
     }
     void FixedUpdate()
@@ -38,6 +39,7 @@ public class playerMovement : MonoBehaviour
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         animator.SetFloat("Angle", angle);
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
+        /*
         if(angle > 90 || angle < -90)
         {
             gameObject.transform.localScale = new Vector3(-1, 1, 1);
@@ -46,6 +48,7 @@ public class playerMovement : MonoBehaviour
         {
             gameObject.transform.localScale = new Vector3(1, 1, 1);
         }
+        */
     }
     private void move()
     {
