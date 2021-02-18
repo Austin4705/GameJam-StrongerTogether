@@ -141,7 +141,7 @@ MonoBehaviour:
   shotsPerSecond: 1
   gun: {fileID: 2606150982791361690}
   gunTip: {fileID: 3388654637000976538}
-  enemyBulletStorage: {fileID: 8570628358285600468, guid: d03eedcb023b20841968be1248d3fc7c,
+  enemyBulletStorage: {fileID: 990506576082264735, guid: d03eedcb023b20841968be1248d3fc7c,
     type: 3}
   angle: 0
   animator: {fileID: 9146548782521535588}
