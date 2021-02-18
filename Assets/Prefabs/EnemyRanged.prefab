@@ -126,8 +126,9 @@ GameObject:
   - component: {fileID: 8006950994245701150}
   - component: {fileID: 8006950994245701147}
   - component: {fileID: 8006950994245701148}
+  - component: {fileID: -5342502074044931552}
   m_Layer: 0
-  m_Name: RangedEnemy
+  m_Name: EnemyRanged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -170,7 +171,10 @@ MonoBehaviour:
   shotsPerSecond: 1
   gun: {fileID: 8006950993783266014}
   gunTip: {fileID: 8006950993875029230}
-  enemyBulletStorage: {fileID: 0}
+  enemyBulletStorage: {fileID: 8570628358285600468, guid: d03eedcb023b20841968be1248d3fc7c,
+    type: 3}
+  angle: 0
+  animator: {fileID: -5342502074044931552}
 --- !u!114 &8006950994245701146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,3 +296,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &-5342502074044931552
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006950994245701151}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 254e2b98b529cf942b23c185c78677e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
