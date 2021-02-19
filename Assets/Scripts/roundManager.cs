@@ -51,7 +51,8 @@ public class roundManager : MonoBehaviour
             currentRound = level.eachRound[currentRoundNum-1];
             totalRoundTime = currentRound.roundTime;
             roundTime = Time.time;
-            gruntsPerSec = currentRound.grunt / roundTime;
+            
+            gruntsPerSec = currentRound.grunt / totalRoundTime;
             totalSpecialEnemies = currentRound.special.Length;
             specialEnemyAt = 0;
             if (totalSpecialEnemies > 0)
@@ -64,8 +65,9 @@ public class roundManager : MonoBehaviour
             //periodically spawn the enemies
             if (Time.time - gruntTime > 1 / gruntsPerSec)
             {
-                //Debug.Log("Spawning Grunt");
-                //thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                Debug.Log("Spawning Grunt");
+                thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                gruntTime = Time.time;
             }
             
             if (Time.time - roundTime > specialEnemy.time)
@@ -87,9 +89,10 @@ public class roundManager : MonoBehaviour
                         break;
                 }
                 
-                if (!(specialEnemyAt >= totalSpecialEnemies-1))
+                if (!(specialEnemyAt >= totalSpecialEnemies))
                 {
                     specialEnemy = currentRound.special[specialEnemyAt];
+                    Debug.Log($"Special Enemy is now at {specialEnemy.type}");
                     specialEnemyAt++;
                 }
                 else
