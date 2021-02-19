@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class roundManager : MonoBehaviour
 {
@@ -18,15 +19,14 @@ public class roundManager : MonoBehaviour
     public Special specialEnemy;
     private int specialEnemyAt;
     public int totalSpecialEnemies;
+    public TextAsset jsonFile;
     // Start is called before the first frame update
     void Start()
     {
         thisGameObject = this.gameObject;
         
         roundTime = Time.time;
-        readJSON.read();
-        level = readJSON.level;
-        readJSON.level = null;
+        read();
         totalLevels = level.eachRound.Length;
         currentRoundNum = 1;
         currentRound = level.eachRound[0];
@@ -55,6 +55,7 @@ public class roundManager : MonoBehaviour
             //periodically spawn the enemies
             if (Time.time - gruntTime > 1 / gruntsPerSec)
             {
+                Debug.Log("Spawning Grunt");
                 thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
             }
             
@@ -63,12 +64,15 @@ public class roundManager : MonoBehaviour
                 switch (specialEnemy.type)
                 {
                     case 1:
+                        Debug.Log("Spawning Grunt Special");
                         thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
                         break;
                     case 2:
+                        Debug.Log("Spawning Charged");
                         thisGameObject.GetComponent<enemySpawner>().spawnCharged();
                         break;
                     case 3:
+                        Debug.Log("Spawning Ranged");
                         thisGameObject.GetComponent<enemySpawner>().spawnRanged();
                         break;
                 }
@@ -99,5 +103,30 @@ public class roundManager : MonoBehaviour
             
         }
         
+    }
+    
+    
+    // Start is called before the first frame update
+    public void read()
+    {
+        level = JsonUtility.FromJson<rounds>(jsonFile.text);
+        
+        //printing rounds
+        foreach (round Round in level.eachRound)
+        {
+            Debug.Log(
+                "roundID: " + Round.roundID + " " + 
+                "roundID: " + Round.grunt + " " +
+                "roundTime: " + Round.roundTime + " "
+            );
+            foreach (Special special in Round.special)
+            {
+                Debug.Log(
+                    "type: " + special.type + " " + 
+                    "time: " + special.time + " " +
+                    "amount: " + special.amount + " "
+                );
+            }
+        }
     }
 }
