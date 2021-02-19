@@ -162,6 +162,7 @@ MonoBehaviour:
   playerDamage: 1
   nanobotsOnDeath: 2
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
+  score: 150
 --- !u!212 &2606150983452991578
 SpriteRenderer:
   m_ObjectHideFlags: 0

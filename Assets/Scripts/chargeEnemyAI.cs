@@ -39,6 +39,8 @@ public class chargeEnemyAI : MonoBehaviour
         {
             enemy.velocity = Vector2.zero;
             inCoolDown = true;
+            angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
         }
         else
         {

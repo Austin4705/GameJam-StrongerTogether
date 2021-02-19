@@ -9,7 +9,7 @@ public class enemyDamage : MonoBehaviour
     public int playerDamage;
     public int nanobotsOnDeath;
     public GameObject nanobot;
-
+    public float score;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +35,7 @@ public class enemyDamage : MonoBehaviour
     public void enemyDie()
     {
         Destroy(this.gameObject);
+        UIManager.Instance.addScore(score);
         dropNanobots();
     }
 
