@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2606150982791361689}
   - component: {fileID: 2606150982791361688}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 2606150983452991583}
   - component: {fileID: 2606150983452991576}
   - component: {fileID: 9146548782521535588}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: EnemyRanged
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,7 +367,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3388654637000976539}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Shooting Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
