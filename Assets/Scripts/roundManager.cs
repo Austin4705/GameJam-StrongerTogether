@@ -21,6 +21,7 @@ public class roundManager : MonoBehaviour
     public int totalSpecialEnemies;
     public TextAsset jsonFile;
     public float time;
+    public float roundTimeDifference;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,6 +39,7 @@ public class roundManager : MonoBehaviour
     {
         calcSpawn();
         time = Time.time;
+        roundTimeDifference = Time.time - roundTime;
     }
 
     void calcSpawn()
@@ -99,7 +101,7 @@ public class roundManager : MonoBehaviour
         }
         //check if new round over to init over to the new one if needed
         newRound = false;
-        if (Time.time - roundTime + waitTimeBetweenRounds > totalRoundTime)
+        if (Time.time - roundTime - waitTimeBetweenRounds > totalRoundTime)
         {
             //round done
             newRound = true;
