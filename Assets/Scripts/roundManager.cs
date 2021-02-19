@@ -20,6 +20,7 @@ public class roundManager : MonoBehaviour
     private int specialEnemyAt;
     public int totalSpecialEnemies;
     public TextAsset jsonFile;
+    public float time;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +37,7 @@ public class roundManager : MonoBehaviour
     void Update()
     {
         calcSpawn();
+        time = Time.time;
     }
 
     void calcSpawn()
@@ -60,12 +62,13 @@ public class roundManager : MonoBehaviour
             //periodically spawn the enemies
             if (Time.time - gruntTime > 1 / gruntsPerSec)
             {
-                Debug.Log("Spawning Grunt");
+                //Debug.Log("Spawning Grunt");
                 //thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
             }
             
             if (Time.time - roundTime > specialEnemy.time)
             {
+                //TODO spawn correct amount
                 switch (specialEnemy.type)
                 {
                     case 1:
@@ -82,11 +85,16 @@ public class roundManager : MonoBehaviour
                         break;
                 }
                 
-                if (!(specialEnemyAt > totalSpecialEnemies))
+                if (!(specialEnemyAt >= totalSpecialEnemies-1))
                 {
                     specialEnemy = currentRound.special[specialEnemyAt];
+                    specialEnemyAt++;
                 }
-                specialEnemyAt++;
+                else
+                {
+                    specialEnemy = null;
+                }
+                
             }
         }
         //check if new round over to init over to the new one if needed
@@ -111,23 +119,27 @@ public class roundManager : MonoBehaviour
     public void read()
     {
         level = JsonUtility.FromJson<rounds>(jsonFile.text);
-        
+        //printRounds(level);
+    }
+
+    private void printRounds(rounds i)
+    {
         //printing rounds
-        // foreach (round Round in level.eachRound)
-        // {
-        //     Debug.Log(
-        //         "roundID: " + Round.roundID + " " + 
-        //         "roundID: " + Round.grunt + " " +
-        //         "roundTime: " + Round.roundTime + " "
-        //     );
-        //     foreach (Special special in Round.special)
-        //     {
-        //         Debug.Log(
-        //             "type: " + special.type + " " + 
-        //             "time: " + special.time + " " +
-        //             "amount: " + special.amount + " "
-        //         );
-        //     }
-        // }
+        foreach (round Round in i.eachRound)
+        {
+            Debug.Log(
+                "roundID: " + Round.roundID + " " + 
+                "roundID: " + Round.grunt + " " +
+                "roundTime: " + Round.roundTime + " "
+            );
+            foreach (Special special in Round.special)
+            {
+                Debug.Log(
+                    "type: " + special.type + " " + 
+                    "time: " + special.time + " " +
+                    "amount: " + special.amount + " "
+                );
+            }
+        }
     }
 }

@@ -3,11 +3,11 @@
     {
       "roundID": 1,
       "grunt": 5,
-      "roundTime": 50,
+      "roundTime": 10,
       "special": [
-        {"type": 2, "time": 10, "amount": 1},
-        {"type": 3, "time": 20, "amount": 1},
-        {"type": 2, "time": 30, "amount": 1}
+        {"type": 2, "time": 2, "amount": 1},
+        {"type": 3, "time": 5, "amount": 1},
+        {"type": 2, "time": 10, "amount": 1}
       ]
     },
     {
