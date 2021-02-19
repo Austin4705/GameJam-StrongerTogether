@@ -8,6 +8,7 @@ public class playerMovement : MonoBehaviour
 {
     public float moveSpeed = 10f;
     public Rigidbody2D player;
+    public Transform gun;
     public Transform gunTip;
     private float lastShot;
     public GameObject bullet;
@@ -15,63 +16,21 @@ public class playerMovement : MonoBehaviour
     public float shotsPerSecond = 3;
     public float angle;
     public Animator animator;
-    public Transform[] stateTransform = new Transform[8];
-    public int state;
-
-    public Transform front;
-    public Transform frontLeft;
-    public Transform left;
-    public Transform backLeft;
-    public Transform back;
-    public Transform backRight;
-    public Transform right;
-    public Transform frontRight;
     
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
         lastShot = Time.time;
-
-        stateTransform[0] = front;
-        stateTransform[1] = frontLeft;
-        stateTransform[2] = left;
-        stateTransform[3] = backLeft;
-        stateTransform[4] = back;
-        stateTransform[5] = backRight;
-        stateTransform[6] = right;
-        stateTransform[7] = frontRight;
     }
     void FixedUpdate()
     {
         move();
+        look();
     }
 
     void Update()
     {
         shoot();
-        switchShootPos();
-    }
-
-    void switchShootPos()
-    {
-
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Front"))
-            state = 0;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Front Left"))
-            state = 1;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Left"))
-            state = 2;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Back Left"))
-            state = 3;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Back"))
-            state = 4;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Back Right"))
-            state = 5;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Right"))
-            state = 6;
-        if (animator.GetCurrentAnimatorStateInfo(0).IsName("Front Right"))
-            state = 7;
-        look();
     }
     private void look()
     {
@@ -79,8 +38,17 @@ public class playerMovement : MonoBehaviour
         //TODO: INPUT
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         animator.SetFloat("Angle", angle);
-        gunTip.transform.position = stateTransform[state].position;
-        gunTip.transform.rotation = Quaternion.AngleAxis(angle+270, Vector3.forward);
+        gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
+        /*
+        if(angle > 90 || angle < -90)
+        {
+            gameObject.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        else
+        {
+            gameObject.transform.localScale = new Vector3(1, 1, 1);
+        }
+        */
     }
     private void move()
     {

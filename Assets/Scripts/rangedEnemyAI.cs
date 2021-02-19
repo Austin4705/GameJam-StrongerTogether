@@ -27,7 +27,6 @@ public class rangedEnemyAI : MonoBehaviour
 
         lastShot = Time.time;
         player = GameObject.FindGameObjectWithTag("Player");
-        enemyBulletStorage = GameObject.FindGameObjectWithTag("enemyBulletStorage");
     }
 
     // Update is called once per frame
@@ -67,8 +66,6 @@ public class rangedEnemyAI : MonoBehaviour
 
     void aim()
     {
-        Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
-        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         //play animation maybe idk
     }
     void shoot()
@@ -76,6 +73,8 @@ public class rangedEnemyAI : MonoBehaviour
         Vector2 dir = new Vector2(player.transform.position.x - this.transform.position.x, player.transform.position.y - this.transform.position.y );
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         
+        
+
         gun.transform.rotation = Quaternion.AngleAxis(angle+180, Vector3.forward);
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
 
