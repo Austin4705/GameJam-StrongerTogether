@@ -32,13 +32,18 @@ public class roundManager : MonoBehaviour
         currentRound = level.eachRound[0];
         newRound = true;
     }
-    
     // Update is called once per frame
     void Update()
+    {
+        calcSpawn();
+    }
+
+    void calcSpawn()
     {
         if (newRound)
         {
             //new round init
+            Debug.Log("NewRound");
             currentRound = level.eachRound[currentRoundNum-1];
             totalRoundTime = currentRound.roundTime;
             roundTime = Time.time;
@@ -56,7 +61,7 @@ public class roundManager : MonoBehaviour
             if (Time.time - gruntTime > 1 / gruntsPerSec)
             {
                 Debug.Log("Spawning Grunt");
-                thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                //thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
             }
             
             if (Time.time - roundTime > specialEnemy.time)
@@ -84,7 +89,6 @@ public class roundManager : MonoBehaviour
                 specialEnemyAt++;
             }
         }
-        
         //check if new round over to init over to the new one if needed
         newRound = false;
         if (Time.time - roundTime + waitTimeBetweenRounds > totalRoundTime)
@@ -95,16 +99,13 @@ public class roundManager : MonoBehaviour
             {
                 currentRoundNum++;    
             }
-            else
-            {
-                //infinite mode
-                currentRound.grunt += 10;
-            }
-            
+            // else
+            // {
+            //     //infinite mode
+            //     currentRound.grunt += 10;
+            // }
         }
-        
     }
-    
     
     // Start is called before the first frame update
     public void read()
@@ -112,21 +113,21 @@ public class roundManager : MonoBehaviour
         level = JsonUtility.FromJson<rounds>(jsonFile.text);
         
         //printing rounds
-        foreach (round Round in level.eachRound)
-        {
-            Debug.Log(
-                "roundID: " + Round.roundID + " " + 
-                "roundID: " + Round.grunt + " " +
-                "roundTime: " + Round.roundTime + " "
-            );
-            foreach (Special special in Round.special)
-            {
-                Debug.Log(
-                    "type: " + special.type + " " + 
-                    "time: " + special.time + " " +
-                    "amount: " + special.amount + " "
-                );
-            }
-        }
+        // foreach (round Round in level.eachRound)
+        // {
+        //     Debug.Log(
+        //         "roundID: " + Round.roundID + " " + 
+        //         "roundID: " + Round.grunt + " " +
+        //         "roundTime: " + Round.roundTime + " "
+        //     );
+        //     foreach (Special special in Round.special)
+        //     {
+        //         Debug.Log(
+        //             "type: " + special.type + " " + 
+        //             "time: " + special.time + " " +
+        //             "amount: " + special.amount + " "
+        //         );
+        //     }
+        // }
     }
 }

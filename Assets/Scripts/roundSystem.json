@@ -3,17 +3,17 @@
     {
       "roundID": 1,
       "grunt": 5,
-      "roundTime": 1,
+      "roundTime": 50,
       "special": [
-        {"type": 2, "time": 0.25, "amount": 1},
-        {"type": 3, "time": 0.5, "amount": 1},
-        {"type": 2, "time": 0.75, "amount": 1}
+        {"type": 2, "time": 10, "amount": 1},
+        {"type": 3, "time": 20, "amount": 1},
+        {"type": 2, "time": 30, "amount": 1}
       ]
     },
     {
       "roundID": 2,
       "grunt": 2,
-      "roundTime": 5,
+      "roundTime": 100,
       "special": [
         {"type": 1, "time": 1, "amount": 1},
         {"type": 1, "time": 1, "amount": 1},
