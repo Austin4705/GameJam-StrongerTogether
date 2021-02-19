@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3126402420713810332}
   - component: {fileID: 3126402420713810331}
   - component: {fileID: 3126402420713810329}
-  - component: {fileID: 5183447356744764105}
+  - component: {fileID: 9006450039102661589}
   m_Layer: 9
   m_Name: Bullet
   m_TagString: Bullet
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 3126402420713810328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.141, y: 11.615, z: -29.320312}
-  m_LocalScale: {x: 0.28858, y: 0.28858, z: 0.28858}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 25631527
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 28b661a652e5ed64c89c33e6533034d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1d46b571982af0447bff0cc0ec7c5751, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -121,8 +121,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!60 &5183447356744764105
-PolygonCollider2D:
+--- !u!58 &9006450039102661589
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -135,22 +135,5 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 1.2}
-    newSize: {x: 0.5, y: 1.2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.08, y: 0.59999996}
-      - {x: -0.089999996, y: 0.59999996}
-      - {x: -0.25, y: 0.53999996}
-      - {x: -0.25, y: -0.51}
-      - {x: -0.08, y: -0.59999996}
-      - {x: 0.089999996, y: -0.59999996}
-      - {x: 0.25, y: -0.53999996}
-      - {x: 0.25, y: 0.51}
+  serializedVersion: 2
+  m_Radius: 0.24

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 39287674184950481}
   - component: {fileID: 450356204300187488}
   - component: {fileID: 4034201736821764063}
-  - component: {fileID: 8801415101747126260}
   - component: {fileID: 6999940612383091594}
+  - component: {fileID: 188024527917623922}
   m_Layer: 0
   m_Name: Nanobot
   m_TagString: Nanobot
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 5415374284267376014}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.996, y: 5.45, z: 0.5}
-  m_LocalScale: {x: 0.44878, y: 0.44878, z: 0.44878}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_SortingLayerID: 25631527
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3e8e74bc1377cdc438ecdf4b94e8e4bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5b1ae6e6309c0f46a072c4f7594118c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -99,39 +99,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &8801415101747126260
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5415374284267376014}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 0.64, y: 0.64}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.089999996, y: 0.32}
-      - {x: -0.32, y: 0.19}
-      - {x: -0.32, y: -0.25}
-      - {x: -0.089999996, y: -0.32}
-      - {x: 0.14, y: -0.32}
-      - {x: 0.32, y: -0.19999999}
-      - {x: 0.32, y: 0.19999999}
-      - {x: 0.04, y: 0.32}
 --- !u!50 &6999940612383091594
 Rigidbody2D:
   serializedVersion: 4
@@ -153,3 +120,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!58 &188024527917623922
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5415374284267376014}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.25
