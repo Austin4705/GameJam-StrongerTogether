@@ -112,11 +112,11 @@ public class roundManager : MonoBehaviour
             {
                 currentRoundNum++;    
             }
-            // else
-            // {
-            //     //infinite mode
-            //     currentRound.grunt += 10;
-            // }
+            else
+            {
+                //infinite mode
+                currentRound.grunt += 10;
+            }
         }
     }
     
