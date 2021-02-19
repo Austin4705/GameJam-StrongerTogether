@@ -5,6 +5,9 @@ using UnityEngine.UIElements;
 
 public class roundManager : MonoBehaviour
 {
+    public bool devSpawnGrunt = true;
+    public bool devSpawnSpecial = true;
+    
     public float roundTime;
     public rounds level;
     public float totalLevels;
@@ -65,41 +68,51 @@ public class roundManager : MonoBehaviour
             //periodically spawn the enemies
             if (Time.time - gruntTime > 1 / gruntsPerSec)
             {
-                Debug.Log("Spawning Grunt");
-                thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                if (devSpawnGrunt)
+                {
+                    Debug.Log("Spawning Grunt");
+                    thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                }
                 gruntTime = Time.time;
             }
-            
-            if (Time.time - roundTime > specialEnemy.time)
+
+            if (specialEnemy != null)
             {
-                //TODO spawn correct amount
-                switch (specialEnemy.type)
+                if (Time.time - roundTime > specialEnemy.time)
                 {
-                    case 1:
-                        Debug.Log("Spawning Grunt Special");
-                        thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
-                        break;
-                    case 2:
-                        Debug.Log("Spawning Charged");
-                        thisGameObject.GetComponent<enemySpawner>().spawnCharged();
-                        break;
-                    case 3:
-                        Debug.Log("Spawning Ranged");
-                        thisGameObject.GetComponent<enemySpawner>().spawnRanged();
-                        break;
-                }
+                    //TODO spawn correct amount
+                    if (devSpawnSpecial)
+                    {
+                        switch (specialEnemy.type)
+                        {
+                            case 1:
+                                Debug.Log("Spawning Grunt Special");
+                                thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
+                                break;
+                            case 2:
+                                Debug.Log("Spawning Charged");
+                                thisGameObject.GetComponent<enemySpawner>().spawnCharged();
+                                break;
+                            case 3:
+                                Debug.Log("Spawning Ranged");
+                                thisGameObject.GetComponent<enemySpawner>().spawnRanged();
+                                break;
+                        }
+                        Debug.Log("Spawned Special");
+                    }
+                    if (!(specialEnemyAt >= totalSpecialEnemies-1))
+                    {
+                        specialEnemyAt++;
+                        specialEnemy = currentRound.special[specialEnemyAt];
+                        Debug.Log($"Special Enemy is now at {specialEnemy.type}");
+                    
+                    }
+                    else
+                    {
+                        specialEnemy = null;
+                    }
                 
-                if (!(specialEnemyAt >= totalSpecialEnemies))
-                {
-                    specialEnemy = currentRound.special[specialEnemyAt];
-                    Debug.Log($"Special Enemy is now at {specialEnemy.type}");
-                    specialEnemyAt++;
-                }
-                else
-                {
-                    specialEnemy = null;
-                }
-                
+                }    
             }
         }
         //check if new round over to init over to the new one if needed
