@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4034201736821764063}
   - component: {fileID: 6999940612383091594}
   - component: {fileID: 188024527917623922}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Nanobot
   m_TagString: Nanobot
   m_Icon: {fileID: 0}
