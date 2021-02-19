@@ -15,6 +15,7 @@ public class nanobotSystem : MonoBehaviour
     public bool invinsible;
     public float invinsibilityTimer = 0;
     public float time;
+    public GameObject hitEffect;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,9 @@ public class nanobotSystem : MonoBehaviour
         if (Time.time - invinsibilityTimer > hitCooldown)
         {
             nanobots = nanobots - damage;
+
+            Instantiate(hitEffect);
+
             if (nanobots < 0)
             {
                 if (!devInvinsible)
@@ -37,6 +41,7 @@ public class nanobotSystem : MonoBehaviour
             invinsible = true;
             invinsibilityTimer = Time.time;
         }
+
     }
     void Update()
     {
