@@ -25,6 +25,7 @@ public class roundManager : MonoBehaviour
     public TextAsset jsonFile;
     public float time;
     public float roundTimeDifference;
+    public int roundNumDisplay;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,13 +37,17 @@ public class roundManager : MonoBehaviour
         currentRoundNum = 1;
         currentRound = level.eachRound[0];
         newRound = true;
+        roundNumDisplay = 1;
     }
     // Update is called once per frame
     void Update()
     {
         calcSpawn();
+        UIManager.Instance.setRound(roundNumDisplay.ToString());
+
         time = Time.time;
         roundTimeDifference = Time.time - roundTime;
+
     }
 
     void calcSpawn()
@@ -123,12 +128,14 @@ public class roundManager : MonoBehaviour
             newRound = true;
             if (currentRoundNum <= totalLevels - 1)
             {
-                currentRoundNum++;    
+                currentRoundNum++;
+                roundNumDisplay = currentRoundNum;
             }
             else
             {
                 //infinite mode
                 currentRound.grunt += 10;
+                roundNumDisplay++;
             }
         }
     }

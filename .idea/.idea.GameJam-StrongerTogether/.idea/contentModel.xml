@@ -28,6 +28,7 @@
           <e p="roundManager.cs" t="Include" />
           <e p="rounds.cs" t="Include" />
           <e p="Special.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
