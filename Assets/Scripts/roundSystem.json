@@ -3,16 +3,16 @@
     {
       "roundID": 1,
       "grunt": 5,
-      "roundTime": 5,
+      "roundTime": 1,
       "special": [
-        {"type": 1, "time": 1, "amount": 1},
-        {"type": 1, "time": 1, "amount": 1},
-        {"type": 1, "time": 1, "amount": 1}
+        {"type": 2, "time": 0.25, "amount": 1},
+        {"type": 3, "time": 0.5, "amount": 1},
+        {"type": 2, "time": 0.75, "amount": 1}
       ]
     },
     {
       "roundID": 2,
-      "grunt": 5,
+      "grunt": 2,
       "roundTime": 5,
       "special": [
         {"type": 1, "time": 1, "amount": 1},

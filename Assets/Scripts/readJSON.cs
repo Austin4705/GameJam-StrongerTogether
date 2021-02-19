@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class readJSON : MonoBehaviour
+public class readJSON
 {
-    public TextAsset jsonFile;
-    public rounds level;
+    public static TextAsset jsonFile;
+    public static rounds level;
     
     // Start is called before the first frame update
-    void Start()
+    public static void read()
     {
         level = JsonUtility.FromJson<rounds>(jsonFile.text);
         
