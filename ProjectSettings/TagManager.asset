@@ -21,7 +21,7 @@ TagManager:
   - 
   - Border
   - Bullet
-  - 
+  - Background
   - 
   - 
   - 
@@ -44,6 +44,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: GlowingBG
+    uniqueID: 3412837111
+    locked: 0
+  - name: BgBuildings
+    uniqueID: 3508061769
+    locked: 0
+  - name: Main Building Sides
+    uniqueID: 1997890647
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
@@ -52,7 +61,4 @@ TagManager:
     locked: 0
   - name: Fence
     uniqueID: 3674635793
-    locked: 0
-  - name: New Layer
-    uniqueID: 3412837111
     locked: 0
