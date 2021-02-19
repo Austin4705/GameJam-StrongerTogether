@@ -20,11 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/masterSpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gruntEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotAI.cs" />
@@ -79,6 +79,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/readJSON.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       </list>
     </option>
