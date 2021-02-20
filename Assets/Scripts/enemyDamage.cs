@@ -60,7 +60,10 @@ public class enemyDamage : MonoBehaviour
     {
         if (other.gameObject.tag == "Bullet")
         {
-            Destroy(other.gameObject);
+            if (!other.gameObject.GetComponent<bullet>().piercing)
+            {
+                Destroy(other.gameObject);   
+            }
             damage(other.gameObject.GetComponent<bullet>().damage);
         }
     }

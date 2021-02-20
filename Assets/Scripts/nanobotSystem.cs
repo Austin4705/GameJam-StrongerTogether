@@ -53,7 +53,7 @@ public class nanobotSystem : MonoBehaviour
         }
         time = Time.time - invinsibilityTimer;
         //TODO Input
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             unlockAbility();
         }

@@ -8,6 +8,7 @@ public class bullet : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
     public float time;
+    public bool piercing = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,10 @@ public class bullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(gameObject);
+            if (!piercing)
+            {
+                Destroy(gameObject);
+            }
         }
         if (other.gameObject.tag == "Wall")
         {
