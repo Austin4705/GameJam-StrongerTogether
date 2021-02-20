@@ -8,6 +8,31 @@ public class UIManager : MonoBehaviour
     public float score;
     public Text roundCount;
     public Text scoreOutput;
+    public Text nanobotOutput;
+    
+    public Text C4CoolDown;
+    public Text C4Unlocked;
+
+    public Text OrbCoolDown;
+    public Text OrbUnlocked;
+
+    public Text PiercingCoolDown;
+    public Text PiercingUnlocked;
+    public Text PiercingDuration;
+
+    public Text CoolDown;
+    public Text Unlocked;
+    public Text Duration;
+
+    void Update()
+    {
+        nanobotOutput.text = nanobotSystem.Instance.nanobots.ToString();
+
+        C4CoolDown.text = (Time.time - abilityManager.Instance.C4Timer / abilityManager.Instance.C4CoolDown).ToString();
+            setBool(C4Unlocked, abilityManager.Instance.c4Unlocked);
+        
+    }
+
     private static UIManager _instance;
     public static UIManager Instance { get { return _instance; } }
     private void Awake()
@@ -26,6 +51,18 @@ public class UIManager : MonoBehaviour
         score = 0;
     }
 
+    void setBool(Text text, bool value)
+    {
+        if (value)
+        {
+            text.text = "Yes";
+        }
+        else
+        {
+            text.text = "No";
+        }
+    }
+    
     public void addScore(float value)
     {
         score = score + value;
@@ -34,11 +71,5 @@ public class UIManager : MonoBehaviour
     public void setRound(string value)
     {
         roundCount.text = value;
-    }
-    
-    // Update is called once per frame
-    void Update()
-    {
-         
     }
 }

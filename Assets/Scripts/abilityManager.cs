@@ -68,29 +68,29 @@ public class abilityManager : MonoBehaviour
             machineGunEnabled = false;
         }
         //TODO: input
-        if (Input.GetKeyDown(KeyCode.G) && c4Unlocked && Time.time - C4Timer > C4CoolDown && this.GetComponent<nanobotSystem>().nanobots - C4Price > 0)
+        if (Input.GetKeyDown(KeyCode.F) && c4Unlocked && Time.time - C4Timer > C4CoolDown && this.GetComponent<nanobotSystem>().nanobots - C4Price > 0)
         {
             spawnC4();
             C4Timer = Time.time;
             this.GetComponent<nanobotSystem>().nanobots -= C4Price;
         }
-        if (Input.GetKeyDown(KeyCode.F) && c4Unlocked)
+        if (Input.GetKeyDown(KeyCode.G) && c4Unlocked)
         {
             detonateC4();
         }
-        if (Input.GetKeyDown(KeyCode.H) && piercingUnlocked && Time.time - piercingTimer > piercingCoolDown && this.GetComponent<nanobotSystem>().nanobots - piercingPrice > 0)
+        if (Input.GetKeyDown(KeyCode.Q) && piercingUnlocked && Time.time - piercingTimer > piercingCoolDown && this.GetComponent<nanobotSystem>().nanobots - piercingPrice > 0)
         {
             enablePiecingBullets();
             piercingTimer = Time.time;
             this.GetComponent<nanobotSystem>().nanobots -= piercingPrice;
         }
-        if (Input.GetKeyDown(KeyCode.Y) && machineGunUnlocked && Time.time - machineGunTimer > machineGunCoolDown && this.GetComponent<nanobotSystem>().nanobots - machineGunPrice > 0)
+        if (Input.GetKeyDown(KeyCode.E) && machineGunUnlocked && Time.time - machineGunTimer > machineGunCoolDown && this.GetComponent<nanobotSystem>().nanobots - machineGunPrice > 0)
         {
             enableMachineGun();
             machineGunTimer = Time.time;
             this.GetComponent<nanobotSystem>().nanobots -= machineGunPrice;
         }
-        if (Input.GetKeyDown(KeyCode.T) && orbUnlocked && Time.time - orbTimer > orbCoolDown && this.GetComponent<nanobotSystem>().nanobots - orbPrice > 0)
+        if (Input.GetKeyDown(KeyCode.V) && orbUnlocked && Time.time - orbTimer > orbCoolDown && this.GetComponent<nanobotSystem>().nanobots - orbPrice > 0)
         {
             spawnOrb();
             orbTimer = Time.time;

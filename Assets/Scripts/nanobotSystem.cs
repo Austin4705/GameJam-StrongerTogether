@@ -22,7 +22,18 @@ public class nanobotSystem : MonoBehaviour
         nanobots = startingBots;
         invinsibilityTimer = Time.time;
     }
-
+    private static nanobotSystem _instance;
+    public static nanobotSystem Instance { get { return _instance; } }
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        } else {
+            _instance = this;
+        }
+    }
+    
     public void Damage(int damage)
     {
         if (Time.time - invinsibilityTimer > hitCooldown)
@@ -134,6 +145,11 @@ public class nanobotSystem : MonoBehaviour
             {
                 Destroy(other.gameObject);
             }
+        }
+        if (other.gameObject.tag == "Explosion")
+        {
+            Damage(other.gameObject.GetComponent<explosionScript>().playerDamage);
+            Debug.Log("Hit By Explosion");
         }
     }
 }

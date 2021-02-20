@@ -8,9 +8,11 @@ public class C4Script : MonoBehaviour
     public Vector3 position;
     public float cutOff = 0.1f;
     public GameObject explosion;
+    public GameObject storage;
     // Start is called before the first frame update
     void Start()
     {
+        storage = GameObject.FindGameObjectWithTag("C4ExplosionStorage"); 
         abilityManager.Instance.detonation += C4Detonation;
     }
 
@@ -29,7 +31,13 @@ public class C4Script : MonoBehaviour
 
     void C4Detonation()
     {
-        Instantiate(explosion, this.gameObject.transform);
+        GameObject newObj = GameObject.Instantiate(explosion, this.gameObject.transform);
+        newObj.transform.parent = storage.transform;
         Destroy(this.gameObject);
+    }
+
+    void OnDestroy()
+    {
+        abilityManager.Instance.detonation -= C4Detonation;
     }
 }

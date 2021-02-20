@@ -49,6 +49,9 @@ MonoBehaviour:
   C4: {fileID: 5155718452195924056}
   position: {x: 0, y: 0, z: 0}
   cutOff: 0.1
+  explosion: {fileID: 8466107271120147054, guid: 6c2b685244b9a1544a0b09daafd161f7,
+    type: 3}
+  storage: {fileID: 0}
 --- !u!212 &4766588697067620842
 SpriteRenderer:
   m_ObjectHideFlags: 0
