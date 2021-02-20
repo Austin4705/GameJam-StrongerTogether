@@ -166,7 +166,8 @@ MonoBehaviour:
   dieOnContact: 0
   audioPlayer: {fileID: 2653383766947879190, guid: c1c2efacfc54525409d1e5cc1eaadac8,
     type: 3}
-  death: {fileID: 8300000, guid: 620b7df129a4f0843a6ca64372327b4c, type: 3}
+  death: {fileID: 8300000, guid: 900ea81e8716d2a46a56b0287240e61f, type: 3}
+  hit: {fileID: 8300000, guid: ffce3e305dfe6d54e948fff11453ecb2, type: 3}
 --- !u!212 &2606150983452991578
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -986,6 +986,9 @@ MonoBehaviour:
   backRight: {fileID: 220663551}
   right: {fileID: 1835196292}
   frontRight: {fileID: 1119091497}
+  audioPlayer: {fileID: 2653383766947879190, guid: c1c2efacfc54525409d1e5cc1eaadac8,
+    type: 3}
+  shootSound: {fileID: 8300000, guid: 3f8084dca1dab77469a91f15a5f4cbf9, type: 3}
 --- !u!50 &487000887
 Rigidbody2D:
   serializedVersion: 4
@@ -4732,6 +4735,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyRanged
       objectReference: {fileID: 0}
+    - target: {fileID: 2606150983452991582, guid: 91ca6f2f984c0324c9d8f6fbad228327,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: ffce3e305dfe6d54e948fff11453ecb2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91ca6f2f984c0324c9d8f6fbad228327, type: 3}
 --- !u!1001 &1958745252
@@ -4741,6 +4749,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 789924937651536673, guid: 7fc2f0a5dab13b3499de57fedb46063f,
+        type: 3}
+      propertyPath: hit
+      value: 
+      objectReference: {fileID: 8300000, guid: ffce3e305dfe6d54e948fff11453ecb2, type: 3}
     - target: {fileID: 6667023172231630729, guid: 7fc2f0a5dab13b3499de57fedb46063f,
         type: 3}
       propertyPath: m_LocalPosition.x

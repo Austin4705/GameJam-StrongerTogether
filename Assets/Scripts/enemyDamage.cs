@@ -13,6 +13,7 @@ public class enemyDamage : MonoBehaviour
     public bool dieOnContact = false;
     public GameObject audioPlayer;
     public AudioClip death;
+    public AudioClip hit;
 
     // Start is called before the first frame update
     void Start()
@@ -34,6 +35,13 @@ public class enemyDamage : MonoBehaviour
         {
             enemyDie();            
         }
+
+        //if (health > 0)
+        //{
+            GameObject newObj = GameObject.Instantiate(audioPlayer, transform.position,
+                Quaternion.identity);
+            newObj.GetComponent<PlaySoundThenDie>().clip = hit;
+        //}
 
     }
     public void enemyDie()

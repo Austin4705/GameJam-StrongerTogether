@@ -16,6 +16,11 @@ public class nanobotSystem : MonoBehaviour
     public float invinsibilityTimer = 0;
     public float time;
     public GameObject hitEffect;
+
+    public GameObject audioPlayer;
+    public AudioClip hit;
+    public AudioClip death;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +44,9 @@ public class nanobotSystem : MonoBehaviour
         if (Time.time - invinsibilityTimer > hitCooldown)
         {
             nanobots = nanobots - damage;
+
+            GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+            sound.GetComponent<PlaySoundThenDie>().clip = hit;
 
             GameObject newObj = GameObject.Instantiate(hitEffect, gameObject.transform.position,
                 gameObject.transform.rotation);
@@ -128,6 +136,7 @@ public class nanobotSystem : MonoBehaviour
 
     public void kill()
     {
+
         Destroy(player);
     }
 
