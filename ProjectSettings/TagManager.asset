@@ -11,6 +11,9 @@ TagManager:
   - Collider
   - Wall
   - enemyBulletStorage
+  - orbExplosionStorage
+  - C4ExplosionStorage
+  - Explosion
   layers:
   - Default
   - TransparentFX

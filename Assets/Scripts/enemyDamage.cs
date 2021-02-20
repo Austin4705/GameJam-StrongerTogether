@@ -66,5 +66,9 @@ public class enemyDamage : MonoBehaviour
             }
             damage(other.gameObject.GetComponent<bullet>().damage);
         }
+        if (other.gameObject.tag == "Explosion")
+        {
+            damage(other.gameObject.GetComponent<explosionScript>().enemyDamage);
+        }
     }
 }

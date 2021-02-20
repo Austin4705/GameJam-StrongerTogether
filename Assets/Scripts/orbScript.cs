@@ -8,9 +8,11 @@ public class orbScript : MonoBehaviour
     public Rigidbody2D rb;
     public float time;
     public GameObject explosion;
+    public GameObject storage;
     // Start is called before the first frame update
     void Start()
     {
+        storage = GameObject.FindGameObjectWithTag("orbExplosionStorage");
         rb.velocity = transform.up * speed;
         time = Time.time;
     }
@@ -23,7 +25,8 @@ public class orbScript : MonoBehaviour
     }
     protected virtual void OnTriggerEnter2D(Collider2D other)
     {
-        //Instantiate(explosion, this.gameObject.transform);
+        GameObject newObj = GameObject.Instantiate(explosion, this.gameObject.transform);
+        newObj.transform.parent = storage.transform;
         Destroy(gameObject);
         
     }
