@@ -7,12 +7,14 @@
     <e p="X:\Repositorys\GameJam-StrongerTogether" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="PlayerHit.cs" t="Include" />
         <e p="Scenes" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
             <e p="License.txt" t="Include" />
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="abilityManager.cs" t="Include" />
           <e p="bullet.cs" t="Include" />
           <e p="chargeEnemyAI.cs" t="Include" />
           <e p="enemyBullet.cs" t="Include" />
