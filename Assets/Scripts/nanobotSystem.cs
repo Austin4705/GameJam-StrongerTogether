@@ -90,20 +90,20 @@ public class nanobotSystem : MonoBehaviour
     }
     public void unlockC4()
     {
-        
+        abilityManager.Instance.c4Unlocked = true;
     }
     public void unlockBulletPiercing()
     {
-        
+        abilityManager.Instance.piercingUnlocked = true;
     }
     public void unlockMachineGun()
     {
-        
+        abilityManager.Instance.machineGunUnlocked = true;
     }
 
     public void unlockLaserOrb()
     {
-        
+        abilityManager.Instance.orbUnlocked = true;
     }
     
     public void addNanobot()

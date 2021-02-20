@@ -31,6 +31,20 @@ public class abilityManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetButtonDown("G") && c4Unlocked)
+        {
+            
+        }
+    }
+
+    private void spawnC4()
+    {
         
     }
+
+    private void enablePiecingBullets()
+    {
+        
+    }
+    private void 
 }
