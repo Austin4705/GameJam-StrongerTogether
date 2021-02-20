@@ -1063,6 +1063,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1238488755}
   m_CullTransparentMesh: 0
+--- !u!1 &1262846033 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6812407511262580784, guid: d662be9987a91104eaaabd3cb850f60b,
+    type: 3}
+  m_PrefabInstance: {fileID: 6812407510997103078}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1272658416
 GameObject:
   m_ObjectHideFlags: 0
@@ -6443,6 +6449,43 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: gunTip
+      value: 
+      objectReference: {fileID: 1262846033}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: orb
+      value: 
+      objectReference: {fileID: 7377128452577514807, guid: 34b304fd3f26da744a243ef6b12ae164,
+        type: 3}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: C4
+      value: 
+      objectReference: {fileID: 1160680634267947750, guid: 71101657049371a45a78bcfe8b21c71d,
+        type: 3}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: C4CoolDown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: C4Price
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: piercingPrice
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8703546930788071460, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: piercingTimer
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d662be9987a91104eaaabd3cb850f60b, type: 3}
