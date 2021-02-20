@@ -20,13 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Orb.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Orb.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/C4Script.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/C4Script.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sound.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sound.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,8 +82,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/orbScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/C4Script.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/C4Script.cs" />
       </list>
     </option>
   </component>
