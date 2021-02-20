@@ -46,5 +46,14 @@ public class abilityManager : MonoBehaviour
     {
         
     }
-    private void 
+
+    private void enableMachineGun()
+    {
+        
+    }
+
+    private void spawnOrb()
+    {
+        
+    }
 }

@@ -54,6 +54,7 @@ MonoBehaviour:
   nanobotsOnDeath: 2
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
   score: 200
+  dieOnContact: 0
 --- !u!114 &7724014022853724660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,6 +78,9 @@ MonoBehaviour:
   chargeTimeSpace: 2
   inCoolDown: 0
   angle: 0
+  followDamage: 2
+  chargeDamage: 4
+  animator: {fileID: 2305031231182618195}
 --- !u!212 &4187566991220981185
 SpriteRenderer:
   m_ObjectHideFlags: 0
