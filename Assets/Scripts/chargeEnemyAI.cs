@@ -16,7 +16,8 @@ public class chargeEnemyAI : MonoBehaviour
     public float chargeTimeSpace;
     public bool inCoolDown;
     public float angle;
-    
+    public int followDamage = 2;
+    public int chargeDamage = 4;
     private float lastCharge;
     private Vector2 dir;
     private float vLength;
@@ -68,6 +69,7 @@ public class chargeEnemyAI : MonoBehaviour
             isCharging = true;
             time = Time.time;
             chargeDirection = dir / vLength;
+            this.gameObject.GetComponent<enemyDamage>().playerDamage = 4;
         }
         //while charge is running
         else
@@ -95,7 +97,6 @@ public class chargeEnemyAI : MonoBehaviour
                 isCharging = false;
                 enemy.velocity = Vector2.zero;
                 lastCharge = Time.time;
-                
             }
         }
 
@@ -108,6 +109,7 @@ public class chargeEnemyAI : MonoBehaviour
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0));
         enemy.velocity = dir;
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        this.gameObject.GetComponent<enemyDamage>().playerDamage = 2;
     }
     
     protected virtual void OnTriggerStay2D(Collider2D other)

@@ -71,7 +71,7 @@ MonoBehaviour:
   player: {fileID: 0}
   enemySpeed: 3
   angle: 0
-  animator: {fileID: 0}
+  animator: {fileID: 7453952374986367834}
 --- !u!212 &6667023172231630774
 SpriteRenderer:
   m_ObjectHideFlags: 0
