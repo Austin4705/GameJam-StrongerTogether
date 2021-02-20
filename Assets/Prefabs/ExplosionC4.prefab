@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8466107271120147053}
   - component: {fileID: 8466107271120147052}
   - component: {fileID: 8466107271120147055}
-  - component: {fileID: 6155518543607924595}
+  - component: {fileID: -8610294562158494468}
   m_Layer: 0
   m_Name: ExplosionC4
   m_TagString: Explosion
@@ -116,7 +116,7 @@ MonoBehaviour:
   playerDamage: 4
   stayAliveTime: 3
   liveTimer: 0
---- !u!50 &6155518543607924595
+--- !u!50 &-8610294562158494468
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -136,4 +136,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

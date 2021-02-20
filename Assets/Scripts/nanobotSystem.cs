@@ -146,6 +146,10 @@ public class nanobotSystem : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.tag == "Explosion")
         {
             Damage(other.gameObject.GetComponent<explosionScript>().playerDamage);

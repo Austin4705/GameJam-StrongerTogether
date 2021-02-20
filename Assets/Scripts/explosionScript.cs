@@ -22,4 +22,9 @@ public class explosionScript : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Collision");
+    }
 }

@@ -104,7 +104,6 @@ public class abilityManager : MonoBehaviour
             new Vector3(Camera.main.ScreenToWorldPoint(Input.mousePosition).x,
                 Camera.main.ScreenToWorldPoint(Input.mousePosition).y,
                 this.gameObject.transform.position.z);
-        Debug.Log("C4");
         
         GameObject newObj = GameObject.Instantiate(C4, this.gameObject.transform.position, this.gameObject.transform.rotation);
         newObj.GetComponent<C4Script>().position = pos;
