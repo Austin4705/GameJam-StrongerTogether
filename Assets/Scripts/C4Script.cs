@@ -7,10 +7,11 @@ public class C4Script : MonoBehaviour
     public Rigidbody2D C4;
     public Vector3 position;
     public float cutOff = 0.1f;
+    public GameObject explosion;
     // Start is called before the first frame update
     void Start()
     {
-        
+        abilityManager.Instance.detonation += C4Detonation;
     }
 
     // Update is called once per frame
@@ -24,5 +25,11 @@ public class C4Script : MonoBehaviour
             dir.y = 0;
         }
         C4.velocity = dir;
+    }
+
+    void C4Detonation()
+    {
+        Instantiate(explosion, this.gameObject.transform);
+        Destroy(this.gameObject);
     }
 }

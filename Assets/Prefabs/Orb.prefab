@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 7377128452577514802}
   - component: {fileID: 7377128452577514803}
-  - component: {fileID: 7377128452577514804}
+  - component: {fileID: -4123706855050070565}
   - component: {fileID: 7377128452577514806}
   - component: {fileID: 3602514413415456634}
   m_Layer: 9
   m_Name: Orb
-  m_TagString: Bullet
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7377128452577514804
+--- !u!114 &-4123706855050070565
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,14 +93,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 7377128452577514807}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ace5cda718956bc48a172718cc343a5e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6d305ec5b8c92824599b82dae82ab744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 0
-  speed: 5
+  speed: 10
   rb: {fileID: 7377128452577514806}
   time: 0
-  piercing: 0
+  explosion: {fileID: 0}
 --- !u!50 &7377128452577514806
 Rigidbody2D:
   serializedVersion: 4

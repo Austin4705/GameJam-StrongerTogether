@@ -8,6 +8,7 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="PlayerHit.cs" t="Include" />
+        <e p="PlaySoundThenDie.cs" t="Include" />
         <e p="Scenes" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
             <e p="License.txt" t="Include" />
@@ -25,6 +26,7 @@
           <e p="healthBar.cs" t="Include" />
           <e p="nanobotAI.cs" t="Include" />
           <e p="nanobotSystem.cs" t="Include" />
+          <e p="orbScript.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
           <e p="rangedEnemyAI.cs" t="Include" />
           <e p="round.cs" t="Include" />
