@@ -2290,6 +2290,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyCharge
       objectReference: {fileID: 0}
+    - target: {fileID: 4187566991220981189, guid: b8add2e284589e4409312c041fa92a45,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4187566991220981246, guid: b8add2e284589e4409312c041fa92a45,
         type: 3}
       propertyPath: m_LocalPosition.x
