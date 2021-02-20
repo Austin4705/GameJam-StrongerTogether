@@ -10,6 +10,7 @@ public class enemyDamage : MonoBehaviour
     public int nanobotsOnDeath;
     public GameObject nanobot;
     public float score;
+    public bool dieOnContact = false;
     // Start is called before the first frame update
     void Start()
     {

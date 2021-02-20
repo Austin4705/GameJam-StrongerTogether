@@ -126,6 +126,10 @@ public class nanobotSystem : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Damage(other.gameObject.GetComponent<enemyDamage>().playerDamage);
+            if (other.gameObject.GetComponent<enemyDamage>().dieOnContact)
+            {
+                Destroy(other.gameObject);
+            }
         }
     }
 }

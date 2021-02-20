@@ -54,6 +54,7 @@ MonoBehaviour:
   nanobotsOnDeath: 1
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
   score: 100
+  dieOnContact: 1
 --- !u!114 &6667023172231630773
 MonoBehaviour:
   m_ObjectHideFlags: 0
