@@ -55,7 +55,7 @@ public class abilityManager : MonoBehaviour
 
     private void spawnC4()
     {
-        
+        Debug.Log("C4");
     }
 
     private void enablePiecingBullets()

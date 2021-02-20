@@ -20,11 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,8 +77,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" />
       </list>
     </option>
   </component>
