@@ -628,7 +628,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 0
 --- !u!222 &304584534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1735,7 +1735,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 5
+  m_Text: 0
 --- !u!222 &771918163
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3171,9 +3171,9 @@ MonoBehaviour:
   PiercingCoolDown: {fileID: 1461433714}
   PiercingUnlocked: {fileID: 575305158}
   PiercingDuration: {fileID: 304584533}
-  CoolDown: {fileID: 1184914012}
-  Unlocked: {fileID: 2103816220}
-  Duration: {fileID: 771918162}
+  MachineGunCoolDown: {fileID: 1184914012}
+  MachineGunUnlocked: {fileID: 2103816220}
+  MachineGunDuration: {fileID: 771918162}
 --- !u!1 &1506595175
 GameObject:
   m_ObjectHideFlags: 0

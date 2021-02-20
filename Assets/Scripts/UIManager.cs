@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -20,16 +21,52 @@ public class UIManager : MonoBehaviour
     public Text PiercingUnlocked;
     public Text PiercingDuration;
 
-    public Text CoolDown;
-    public Text Unlocked;
-    public Text Duration;
+    public Text MachineGunCoolDown;
+    public Text MachineGunUnlocked;
+    public Text MachineGunDuration;
 
     void Update()
     {
         nanobotOutput.text = nanobotSystem.Instance.nanobots.ToString();
 
-        C4CoolDown.text = (Time.time - abilityManager.Instance.C4Timer / abilityManager.Instance.C4CoolDown).ToString();
-            setBool(C4Unlocked, abilityManager.Instance.c4Unlocked);
+        float C4Percentage = capNumber((Time.time - abilityManager.Instance.C4Timer) / abilityManager.Instance.C4CoolDown,
+            0, 1, abilityManager.Instance.c4Unlocked);
+        C4CoolDown.text = C4Percentage.ToString();
+        setBool(C4Unlocked, abilityManager.Instance.c4Unlocked);
+        
+        float piercingPercentage = capNumber((Time.time - abilityManager.Instance.piercingTimer) / abilityManager.Instance.piercingCoolDown,
+            0, 1, abilityManager.Instance.piercingUnlocked);
+        PiercingCoolDown.text = piercingPercentage.ToString();
+        setBool(PiercingUnlocked, abilityManager.Instance.piercingUnlocked);
+        if (abilityManager.Instance.piercingEnabled)
+        {
+            PiercingDuration.text = (1-capNumber((Time.time - abilityManager.Instance.piercingTimer) / abilityManager.Instance.piercingActiveTime,
+                0, 1, abilityManager.Instance.piercingUnlocked)).ToString();
+        }
+        else
+        {
+            PiercingDuration.text = 0.ToString();
+        }
+        
+        
+        float machineGunPercentage = capNumber((Time.time - abilityManager.Instance.machineGunTimer) / abilityManager.Instance.machineGunCoolDown,
+            0, 1, abilityManager.Instance.machineGunUnlocked);
+        MachineGunCoolDown.text = machineGunPercentage.ToString();
+        setBool(MachineGunUnlocked, abilityManager.Instance.machineGunUnlocked);
+        if (abilityManager.Instance.machineGunEnabled)
+        {
+            MachineGunDuration.text = (1-capNumber((Time.time - abilityManager.Instance.machineGunTimer) / abilityManager.Instance.machineGunActiveTime,
+                0, 1, abilityManager.Instance.machineGunUnlocked)).ToString();
+        }
+        else
+        {
+            MachineGunDuration.text = 0.ToString();
+        }
+
+        float orbPercentage = capNumber((Time.time - abilityManager.Instance.orbTimer) / abilityManager.Instance.orbCoolDown,
+            0, 1, abilityManager.Instance.orbUnlocked);
+        OrbCoolDown.text = orbPercentage.ToString();
+        setBool(OrbUnlocked, abilityManager.Instance.orbUnlocked);
         
     }
 
@@ -62,6 +99,28 @@ public class UIManager : MonoBehaviour
             text.text = "No";
         }
     }
+
+    float capNumber(float value, float capBottom, float capTop, bool zeroBoolean)
+    {
+        if (!zeroBoolean)
+        {
+            return 0;
+        }
+        else if (value < capBottom)
+        {
+            return capBottom;
+        }
+        else if (value > capTop)
+        {
+            return capTop;
+        }
+        else
+        {
+            return value;
+        }
+    }
+    
+    
     
     public void addScore(float value)
     {
