@@ -13,6 +13,8 @@ public class playerMovement : MonoBehaviour
     public GameObject bullet;
     public GameObject bulletStorage;
     public float shotsPerSecond = 3;
+    public float defaultShotsPerSecond = 3;
+    public float machineGunShotsPerSecond = 10;
     public float angle;
     public Animator animator;
     public Transform[] stateTransform = new Transform[8];
@@ -50,6 +52,14 @@ public class playerMovement : MonoBehaviour
     {
         shoot();
         switchShootPos();
+        if (gameObject.GetComponent<abilityManager>().machineGunEnabled)
+        {
+            shotsPerSecond = machineGunShotsPerSecond;
+        }
+        else
+        {
+            shotsPerSecond = defaultShotsPerSecond;
+        }
     }
 
     void switchShootPos()
@@ -102,6 +112,7 @@ public class playerMovement : MonoBehaviour
                 GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
                     gunTip.transform.rotation);
                 newObj.transform.parent = bulletStorage.transform;
+                newObj.GetComponent<bullet>().piercing = abilityManager.Instance.piercingEnabled;
             }
         }
     }
