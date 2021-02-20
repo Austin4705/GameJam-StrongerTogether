@@ -82,7 +82,7 @@ public class nanobotSystem : MonoBehaviour
         {
             if (nanobots - abilityPrice[abilityStatus] > 0 && abilityStatus <= 4)
             {
-                Debug.Log("Unlocking Ability");
+                //Debug.Log("Unlocking Ability");
                 nanobots = nanobots - abilityPrice[abilityStatus];
                 switch (abilityStatus)
                 {
