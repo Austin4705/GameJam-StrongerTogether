@@ -8,7 +8,7 @@ public class nanobotSystem : MonoBehaviour
     public int nanobots;
     public int startingBots = 5;
     public int abilityStatus = 0;
-    public int[] abilityPrice = {5, 20, 40, 60, 100};
+    public int[] abilityPrice = {1, 2, 3, 4};
     public GameObject player;
     public float hitCooldown;
     public bool devInvinsible = true;
@@ -53,7 +53,7 @@ public class nanobotSystem : MonoBehaviour
         }
         time = Time.time - invinsibilityTimer;
         //TODO Input
-        if (Input.GetButtonDown("R"))
+        if (Input.GetButtonDown("Fire1"))
         {
             unlockAbility();
         }
@@ -67,25 +67,29 @@ public class nanobotSystem : MonoBehaviour
     }
     public void unlockAbility()
     {
-        if (nanobots - abilityPrice[abilityStatus] > 0 && abilityStatus < 4)
+        if (!(abilityStatus >= 4))
         {
-            nanobots = nanobots - abilityPrice[abilityStatus];
-            switch (abilityStatus)
+            if (nanobots - abilityPrice[abilityStatus] > 0 && abilityStatus <= 4)
             {
-                case 0:
-                    unlockC4();
-                    break;
-                case 1:
-                    unlockBulletPiercing();
-                    break;
-                case 2:
-                    unlockMachineGun();
-                    break;
-                case 3:
-                    unlockLaserOrb();
-                    break;
-            }
-            abilityStatus++;
+                Debug.Log("Unlocking Ability");
+                nanobots = nanobots - abilityPrice[abilityStatus];
+                switch (abilityStatus)
+                {
+                    case 0:
+                        unlockC4();
+                        break;
+                    case 1:
+                        unlockBulletPiercing();
+                        break;
+                    case 2:
+                        unlockMachineGun();
+                        break;
+                    case 3:
+                        unlockLaserOrb();
+                        break;
+                }
+                abilityStatus++;
+            }   
         }
     }
     public void unlockC4()

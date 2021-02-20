@@ -75,7 +75,7 @@ public class roundManager : MonoBehaviour
             {
                 if (devSpawnGrunt)
                 {
-                    Debug.Log("Spawning Grunt");
+                    //Debug.Log("Spawning Grunt");
                     thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
                 }
                 gruntTime = Time.time;
@@ -91,25 +91,25 @@ public class roundManager : MonoBehaviour
                         switch (specialEnemy.type)
                         {
                             case 1:
-                                Debug.Log("Spawning Grunt Special");
+                                //Debug.Log("Spawning Grunt Special");
                                 thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
                                 break;
                             case 2:
-                                Debug.Log("Spawning Charged");
+                                //Debug.Log("Spawning Charged");
                                 thisGameObject.GetComponent<enemySpawner>().spawnCharged();
                                 break;
                             case 3:
-                                Debug.Log("Spawning Ranged");
+                                //Debug.Log("Spawning Ranged");
                                 thisGameObject.GetComponent<enemySpawner>().spawnRanged();
                                 break;
                         }
-                        Debug.Log("Spawned Special");
+                        //Debug.Log("Spawned Special");
                     }
                     if (!(specialEnemyAt >= totalSpecialEnemies-1))
                     {
                         specialEnemyAt++;
                         specialEnemy = currentRound.special[specialEnemyAt];
-                        Debug.Log($"Special Enemy is now at {specialEnemy.type}");
+                        //Debug.Log($"Special Enemy is now at {specialEnemy.type}");
                     
                     }
                     else

@@ -31,15 +31,31 @@ public class abilityManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("G") && c4Unlocked)
+        if (Input.GetButtonDown("Fire2") && c4Unlocked)
         {
-            
+            spawnC4();
+        }
+        if (Input.GetButtonDown("Fire2") && c4Unlocked)
+        {
+            //detonate c4
+        }
+        if (Input.GetButtonDown("Fire3") && piercingUnlocked)
+        {
+            enablePiecingBullets();
+        }
+        if (Input.GetButtonDown("Fire3") && machineGunUnlocked)
+        {
+            enableMachineGun();
+        }
+        if (Input.GetButtonDown("Fire2") && orbUnlocked)
+        {
+            spawnOrb();
         }
     }
 
     private void spawnC4()
     {
-        
+        Debug.Log("C4");
     }
 
     private void enablePiecingBullets()
