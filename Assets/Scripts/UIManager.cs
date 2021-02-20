@@ -11,19 +11,19 @@ public class UIManager : MonoBehaviour
     public Text scoreOutput;
     public Text nanobotOutput;
     
-    public Text C4CoolDown;
-    public Text C4Unlocked;
+    public GameObject C4CoolDown;
+    public GameObject C4Unlocked;
 
-    public Text OrbCoolDown;
-    public Text OrbUnlocked;
+    public GameObject OrbCoolDown;
+    public GameObject OrbUnlocked;
 
-    public Text PiercingCoolDown;
-    public Text PiercingUnlocked;
-    public Text PiercingDuration;
-
-    public Text MachineGunCoolDown;
-    public Text MachineGunUnlocked;
-    public Text MachineGunDuration;
+    public GameObject PiercingCoolDown;
+    public GameObject PiercingUnlocked;
+    public GameObject PiercingDuration;
+    
+    public GameObject MachineGunCoolDown;
+    public GameObject MachineGunUnlocked;
+    public GameObject MachineGunDuration;
 
     void Update()
     {
@@ -31,43 +31,42 @@ public class UIManager : MonoBehaviour
 
         float C4Percentage = capNumber((Time.time - abilityManager.Instance.C4Timer) / abilityManager.Instance.C4CoolDown,
             0, 1, abilityManager.Instance.c4Unlocked);
-        C4CoolDown.text = C4Percentage.ToString();
+        C4CoolDown.GetComponent<Image>().fillAmount = C4Percentage;
         setBool(C4Unlocked, abilityManager.Instance.c4Unlocked);
         
         float piercingPercentage = capNumber((Time.time - abilityManager.Instance.piercingTimer) / abilityManager.Instance.piercingCoolDown,
             0, 1, abilityManager.Instance.piercingUnlocked);
-        PiercingCoolDown.text = piercingPercentage.ToString();
+        PiercingCoolDown.GetComponent<Image>().fillAmount = piercingPercentage;
         setBool(PiercingUnlocked, abilityManager.Instance.piercingUnlocked);
         if (abilityManager.Instance.piercingEnabled)
         {
-            PiercingDuration.text = (1-capNumber((Time.time - abilityManager.Instance.piercingTimer) / abilityManager.Instance.piercingActiveTime,
-                0, 1, abilityManager.Instance.piercingUnlocked)).ToString();
+            PiercingDuration.GetComponent<Image>().fillAmount = (1-capNumber((Time.time - abilityManager.Instance.piercingTimer) / abilityManager.Instance.piercingActiveTime,
+                0, 1, abilityManager.Instance.piercingUnlocked));
         }
         else
         {
-            PiercingDuration.text = 0.ToString();
+            PiercingDuration.GetComponent<Image>().fillAmount = 0;
         }
         
         
         float machineGunPercentage = capNumber((Time.time - abilityManager.Instance.machineGunTimer) / abilityManager.Instance.machineGunCoolDown,
             0, 1, abilityManager.Instance.machineGunUnlocked);
-        MachineGunCoolDown.text = machineGunPercentage.ToString();
+        MachineGunCoolDown.GetComponent<Image>().fillAmount = machineGunPercentage;
         setBool(MachineGunUnlocked, abilityManager.Instance.machineGunUnlocked);
         if (abilityManager.Instance.machineGunEnabled)
         {
-            MachineGunDuration.text = (1-capNumber((Time.time - abilityManager.Instance.machineGunTimer) / abilityManager.Instance.machineGunActiveTime,
-                0, 1, abilityManager.Instance.machineGunUnlocked)).ToString();
+            MachineGunDuration.GetComponent<Image>().fillAmount = (1-capNumber((Time.time - abilityManager.Instance.machineGunTimer) / abilityManager.Instance.machineGunActiveTime,
+                0, 1, abilityManager.Instance.machineGunUnlocked));
         }
         else
         {
-            MachineGunDuration.text = 0.ToString();
+            MachineGunDuration.GetComponent<Image>().fillAmount = 0;
         }
 
         float orbPercentage = capNumber((Time.time - abilityManager.Instance.orbTimer) / abilityManager.Instance.orbCoolDown,
             0, 1, abilityManager.Instance.orbUnlocked);
-        OrbCoolDown.text = orbPercentage.ToString();
+        OrbCoolDown.GetComponent<Image>().fillAmount = orbPercentage;
         setBool(OrbUnlocked, abilityManager.Instance.orbUnlocked);
-        
     }
 
     private static UIManager _instance;
@@ -88,16 +87,9 @@ public class UIManager : MonoBehaviour
         score = 0;
     }
 
-    void setBool(Text text, bool value)
+    void setBool(GameObject game, bool value)
     {
-        if (value)
-        {
-            text.text = "Yes";
-        }
-        else
-        {
-            text.text = "No";
-        }
+        game.GetComponent<Image>().enabled = !value;
     }
 
     float capNumber(float value, float capBottom, float capTop, bool zeroBoolean)
@@ -120,13 +112,12 @@ public class UIManager : MonoBehaviour
         }
     }
     
-    
-    
     public void addScore(float value)
     {
         score = score + value;
         scoreOutput.text = score.ToString();
     }
+    
     public void setRound(string value)
     {
         roundCount.text = value;

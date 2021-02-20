@@ -118,19 +118,23 @@ public class nanobotSystem : MonoBehaviour
     }
     public void unlockC4()
     {
+        abilityManager.Instance.C4Timer = Time.time;
         abilityManager.Instance.c4Unlocked = true;
     }
     public void unlockBulletPiercing()
     {
+        abilityManager.Instance.piercingTimer = Time.time;
         abilityManager.Instance.piercingUnlocked = true;
     }
     public void unlockMachineGun()
     {
+        abilityManager.Instance.machineGunTimer = Time.time;
         abilityManager.Instance.machineGunUnlocked = true;
     }
 
     public void unlockLaserOrb()
     {
+        abilityManager.Instance.orbTimer = Time.time;
         abilityManager.Instance.orbUnlocked = true;
     }
     
