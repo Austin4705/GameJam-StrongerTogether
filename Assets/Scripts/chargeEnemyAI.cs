@@ -22,14 +22,17 @@ public class chargeEnemyAI : MonoBehaviour
     private float vLength;
     private float time;
     private Vector2 chargeDirection;
+    public Animator animator;
 
     void Start()
     {
+        animator = gameObject.GetComponent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
     }
 
     void FixedUpdate()
     {
+        animator.SetFloat("Angle", angle);
         dir = new Vector2(player.transform.position.x - this.transform.position.x,
             player.transform.position.y - this.transform.position.y);
         vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
