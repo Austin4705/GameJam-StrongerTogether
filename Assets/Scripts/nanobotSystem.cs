@@ -153,7 +153,6 @@ public class nanobotSystem : MonoBehaviour
         if (other.gameObject.tag == "Explosion")
         {
             Damage(other.gameObject.GetComponent<explosionScript>().playerDamage);
-            Debug.Log("Hit By Explosion");
         }
     }
 }
