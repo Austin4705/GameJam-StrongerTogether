@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    private static UIManager _instance;
     public float score;
     public Text roundCount;
     public Text scoreOutput;
+    private static UIManager _instance;
     public static UIManager Instance { get { return _instance; } }
     private void Awake()
     {

@@ -29,7 +29,9 @@ public class nanobotSystem : MonoBehaviour
         {
             nanobots = nanobots - damage;
 
-            Instantiate(hitEffect);
+            GameObject newObj = GameObject.Instantiate(hitEffect, gameObject.transform.position,
+                gameObject.transform.rotation);
+            newObj.transform.parent = gameObject.transform;
 
             if (nanobots < 0)
             {
@@ -50,6 +52,11 @@ public class nanobotSystem : MonoBehaviour
             invinsible = false;
         }
         time = Time.time - invinsibilityTimer;
+        //TODO Input
+        if (Input.GetButtonDown("R"))
+        {
+            unlockAbility();
+        }
     }
     public void useAbility(int value)
     {
@@ -60,11 +67,43 @@ public class nanobotSystem : MonoBehaviour
     }
     public void unlockAbility()
     {
-        if (nanobots - abilityPrice[abilityStatus] > 0)
+        if (nanobots - abilityPrice[abilityStatus] > 0 && abilityStatus < 4)
         {
             nanobots = nanobots - abilityPrice[abilityStatus];
+            switch (abilityStatus)
+            {
+                case 0:
+                    unlockC4();
+                    break;
+                case 1:
+                    unlockBulletPiercing();
+                    break;
+                case 2:
+                    unlockMachineGun();
+                    break;
+                case 3:
+                    unlockLaserOrb();
+                    break;
+            }
             abilityStatus++;
         }
+    }
+    public void unlockC4()
+    {
+        
+    }
+    public void unlockBulletPiercing()
+    {
+        
+    }
+    public void unlockMachineGun()
+    {
+        
+    }
+
+    public void unlockLaserOrb()
+    {
+        
     }
     
     public void addNanobot()

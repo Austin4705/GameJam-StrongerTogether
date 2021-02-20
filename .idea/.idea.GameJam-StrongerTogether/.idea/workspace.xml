@@ -20,11 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/PlayerHit.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/PlayerHit.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Animation/Player.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprite/Effects/Player Damage/PlayerHit.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprite/Effects/Player Damage/PlayerHit.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +54,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/rounds.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/a0/a35b83fb/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/bd/80c54866/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/round.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/d3/0c8b09cc/Debug.cs" root0="SKIP_HIGHLIGHTING" />
@@ -66,7 +72,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/masterSpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gruntEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotAI.cs" />
@@ -78,8 +83,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
       </list>
     </option>
   </component>
@@ -220,11 +227,11 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="467" key="GridCell.Tab.3.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613769567771" />
-    <state x="-1828" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1613725591607">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog" timestamp="1613779813699">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613725591607" />
-    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613503425691" />
+    <state x="92" y="92" width="1736" height="856" key="VCS.FileHistoryDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613779813699" />
     <state x="616" y="240" key="run.anything.popup" timestamp="1613503266060">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

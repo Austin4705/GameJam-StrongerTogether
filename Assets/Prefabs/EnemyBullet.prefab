@@ -67,6 +67,7 @@ MonoBehaviour:
   playerDamage: 1
   nanobotsOnDeath: 0
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
+  score: 0
 --- !u!212 &8898487565392293468
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -105,7 +106,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 25631527
   m_SortingLayer: 1
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300000, guid: 29492a50ef5ecef4983c3e31b2c90aae, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
