@@ -36,6 +36,10 @@ public class abilityManager : MonoBehaviour
     public int orbPrice;
     public float orbTimer;
 
+    public GameObject audioPlayer;
+    public AudioClip dropC4Sound;
+    public AudioClip explodeC4Sound;
+
     public static abilityManager Instance { get { return _instance; } }
     private void Awake()
     {
@@ -107,6 +111,11 @@ public class abilityManager : MonoBehaviour
         
         GameObject newObj = GameObject.Instantiate(C4, this.gameObject.transform.position, this.gameObject.transform.rotation);
         newObj.GetComponent<C4Script>().position = pos;
+
+        GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+        sound.GetComponent<PlaySoundThenDie>().clip = dropC4Sound;
+
+
     }
 
     private void detonateC4()
@@ -115,6 +124,9 @@ public class abilityManager : MonoBehaviour
         {
             detonation();
         }
+
+        GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+        sound.GetComponent<PlaySoundThenDie>().clip = explodeC4Sound;
     }
     private void enablePiecingBullets()
     {
