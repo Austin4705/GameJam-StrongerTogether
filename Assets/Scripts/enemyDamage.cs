@@ -11,6 +11,9 @@ public class enemyDamage : MonoBehaviour
     public GameObject nanobot;
     public float score;
     public bool dieOnContact = false;
+    public GameObject audioPlayer;
+    public AudioClip death;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +38,11 @@ public class enemyDamage : MonoBehaviour
     }
     public void enemyDie()
     {
+        GameObject newObj = GameObject.Instantiate(audioPlayer, transform.position,
+                Quaternion.identity);
+        newObj.GetComponent<PlaySoundThenDie>().clip = death;
+
+
         Destroy(this.gameObject);
         UIManager.Instance.addScore(score);
         dropNanobots();

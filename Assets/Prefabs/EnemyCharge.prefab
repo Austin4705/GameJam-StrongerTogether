@@ -55,6 +55,9 @@ MonoBehaviour:
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
   score: 200
   dieOnContact: 0
+  audioPlayer: {fileID: 2653383766947879190, guid: c1c2efacfc54525409d1e5cc1eaadac8,
+    type: 3}
+  death: {fileID: 8300000, guid: 504bcf4987bfac545be82dfef5bce508, type: 3}
 --- !u!114 &7724014022853724660
 MonoBehaviour:
   m_ObjectHideFlags: 0
