@@ -81,7 +81,6 @@ public class chargeEnemyAI : MonoBehaviour
                 enemy.velocity = direction;
                 Debug.DrawRay(this.transform.position, new Vector3(direction.x, direction.y, 0));
                 angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
             }
             //charge time is up
             else
@@ -89,7 +88,6 @@ public class chargeEnemyAI : MonoBehaviour
                 isCharging = false;
                 enemy.velocity = Vector2.zero;
                 lastCharge = Time.time;
-
             }
             //if touching player end charge
             if (touchingPlayer)
