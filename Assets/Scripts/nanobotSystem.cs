@@ -18,8 +18,9 @@ public class nanobotSystem : MonoBehaviour
     public GameObject hitEffect;
 
     public GameObject audioPlayer;
-    public AudioClip hit;
-    public AudioClip death;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    public AudioClip unlockAbilitySound;
 
     // Start is called before the first frame update
     void Start()
@@ -46,7 +47,7 @@ public class nanobotSystem : MonoBehaviour
             nanobots = nanobots - damage;
 
             GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
-            sound.GetComponent<PlaySoundThenDie>().clip = hit;
+            sound.GetComponent<PlaySoundThenDie>().clip = hitSound;
 
             GameObject newObj = GameObject.Instantiate(hitEffect, gameObject.transform.position,
                 gameObject.transform.rotation);
@@ -92,6 +93,10 @@ public class nanobotSystem : MonoBehaviour
             {
                 //Debug.Log("Unlocking Ability");
                 nanobots = nanobots - abilityPrice[abilityStatus];
+
+                GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+                sound.GetComponent<PlaySoundThenDie>().clip = unlockAbilitySound;
+
                 switch (abilityStatus)
                 {
                     case 0:
