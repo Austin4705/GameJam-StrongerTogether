@@ -9,13 +9,21 @@ public class NextScene : MonoBehaviour
     public bool nextScene;
     void Update()
     {
-        if(Input.GetButton("Jump") && nextScene)
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-        else
-        {
-            SceneManager.LoadScene(sceneToLoad);
+            Debug.Log("space");
+            if(nextScene == true)
+            {
+               SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                Debug.Log("next scene");
+            }
+            else
+            {
+                SceneManager.LoadScene(sceneToLoad);
+                Debug.Log("specific scene");
+            }
+
+
         }
     }
 }
