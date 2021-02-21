@@ -28,9 +28,11 @@
           <e p="nanobotAI.cs" t="Include" />
           <e p="nanobotSystem.cs" t="Include" />
           <e p="orbScript.cs" t="Include" />
+          <e p="pauseGame.cs" t="Include" />
           <e p="playButton.cs" t="Include" />
           <e p="playerMovement.cs" t="Include" />
           <e p="rangedEnemyAI.cs" t="Include" />
+          <e p="resumeButton.cs" t="Include" />
           <e p="round.cs" t="Include" />
           <e p="roundManager.cs" t="Include" />
           <e p="rounds.cs" t="Include" />
