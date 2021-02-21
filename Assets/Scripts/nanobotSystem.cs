@@ -54,7 +54,7 @@ public class nanobotSystem : MonoBehaviour
                 gameObject.transform.rotation);
             newObj.transform.parent = gameObject.transform;
 
-            if (nanobots < 0)
+            if (nanobots <= 0)
             {
                 if (!devInvinsible)
                 {
@@ -158,7 +158,7 @@ public class nanobotSystem : MonoBehaviour
             won = false;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
         }
-        Destroy(player);
+        //Destroy(player);
         
     }
 

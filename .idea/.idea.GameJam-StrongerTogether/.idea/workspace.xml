@@ -20,6 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/callWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/callWin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,6 +39,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/roundSystem.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Special.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/callWin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/orbScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/healthBar.cs" root0="FORCE_HIGHLIGHTING" />
@@ -86,6 +90,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyHealthBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/callWin.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
       </list>
     </option>

@@ -5182,6 +5182,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5370418205037971984, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: devInvinsible
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5370418205037971984, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: RoundManager
+      value: 
+      objectReference: {fileID: 561673804}
     - target: {fileID: 5370418205037971994, guid: d662be9987a91104eaaabd3cb850f60b,
         type: 3}
       propertyPath: m_Name

@@ -14,9 +14,9 @@ public class callWin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (/*ROUND VARIABLE > 20*/)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
-        }
+        // if (/*ROUND VARIABLE > 20*/)
+        // {
+        //     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        // }
     }
 }
