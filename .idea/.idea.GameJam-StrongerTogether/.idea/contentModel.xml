@@ -43,6 +43,11 @@
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
             <e p="License.txt" t="Include" />
           </e>
+          <e p="UI" t="Include">
+            <e p="Font" t="Include">
+              <e p="perfectdark.txt" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">
