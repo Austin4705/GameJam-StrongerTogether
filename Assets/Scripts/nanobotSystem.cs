@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class nanobotSystem : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class nanobotSystem : MonoBehaviour
     public float invinsibilityTimer = 0;
     public float time;
     public GameObject hitEffect;
-
+    public GameObject RoundManager;
     public GameObject audioPlayer;
     public AudioClip hitSound;
     public AudioClip deathSound;
@@ -145,8 +146,20 @@ public class nanobotSystem : MonoBehaviour
 
     public void kill()
     {
-
+        float score = UIManager.Instance.score;
+        bool won;
+        if (RoundManager.GetComponent<roundManager>().roundNumDisplay >= 20)
+        {
+            won = true;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
+        }
+        else
+        {
+            won = false;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        }
         Destroy(player);
+        
     }
 
     private void OnCollisionStay2D(Collision2D other)

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class chargeEnemyAI : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class chargeEnemyAI : MonoBehaviour
     private float time;
     private Vector2 chargeDirection;
     public Animator animator;
-
+    
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
