@@ -134,8 +134,8 @@ MonoBehaviour:
   enemy: {fileID: 2606150983452991576}
   player: {fileID: 0}
   enemySpeed: 5
-  shootingRange: 4
-  aimTime: 2
+  shootingRange: 5
+  aimTime: 0.5
   enemyBullet: {fileID: 8898487565392293467, guid: 1292047c99cf9624a9213a09039a39d2,
     type: 3}
   shotsPerSecond: 1
@@ -160,7 +160,7 @@ MonoBehaviour:
   health: 100
   maxHealth: 100
   playerDamage: 1
-  nanobotsOnDeath: 2
+  nanobotsOnDeath: 3
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
   score: 150
   dieOnContact: 0

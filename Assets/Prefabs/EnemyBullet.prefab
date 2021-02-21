@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4ec35af533edea4fb548c96b610dda0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  speed: 5
   rb: {fileID: 8898487565392293469}
   time: 0
 --- !u!114 &8898487565392293471
@@ -68,6 +68,10 @@ MonoBehaviour:
   nanobotsOnDeath: 0
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
   score: 0
+  dieOnContact: 0
+  audioPlayer: {fileID: 0}
+  death: {fileID: 0}
+  hit: {fileID: 0}
 --- !u!212 &8898487565392293468
 SpriteRenderer:
   m_ObjectHideFlags: 0

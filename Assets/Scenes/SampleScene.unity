@@ -1125,7 +1125,7 @@ MonoBehaviour:
     eachRound: []
   totalLevels: 0
   currentRoundNum: 0
-  waitTimeBetweenRounds: 1
+  waitTimeBetweenRounds: 10
   gruntsPerSec: 0
   totalRoundTime: 0
   gruntTime: 0
@@ -5257,6 +5257,51 @@ PrefabInstance:
       propertyPath: bulletStorage
       value: 
       objectReference: {fileID: 191688002}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: C4Price
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: C4Timer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: piercingCoolDown
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: piercingPrice
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: piercingActiveTime
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: machineGunCoolDown
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: machineGunTimer
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: orbCoolDown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837446147670821099, guid: d662be9987a91104eaaabd3cb850f60b,
+        type: 3}
+      propertyPath: orbPrice
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d662be9987a91104eaaabd3cb850f60b, type: 3}
 --- !u!1 &5712988518798542696
