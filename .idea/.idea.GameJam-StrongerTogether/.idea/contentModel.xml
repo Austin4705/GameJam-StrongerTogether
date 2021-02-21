@@ -27,6 +27,7 @@
           <e p="healthBar.cs" t="Include" />
           <e p="nanobotAI.cs" t="Include" />
           <e p="nanobotSystem.cs" t="Include" />
+          <e p="NextScene.cs" t="Include" />
           <e p="orbScript.cs" t="Include" />
           <e p="pauseGame.cs" t="Include" />
           <e p="playButton.cs" t="Include" />
