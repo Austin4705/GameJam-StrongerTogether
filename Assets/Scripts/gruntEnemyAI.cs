@@ -23,11 +23,11 @@ public class gruntEnemyAI : MonoBehaviour
         float vLength = (Mathf.Sqrt((dir.x * dir.x) + (dir.y * dir.y)));
         angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
         animator.SetFloat("Angle", angle);
-        if (vLength <= 1f)
-        {
-            dir.x = 0;
-            dir.y = 0;
-        }
+        // if (vLength <= 1f)
+        // {
+        //     dir.x = 0;
+        //     dir.y = 0;
+        // }
         dir = (dir / vLength) * enemySpeed;
         //Debug.Log($"{dir.x}, {dir.y}, {vLength}");
         Debug.DrawRay(this.transform.position, new Vector3(dir.x, dir.y, 0) );
