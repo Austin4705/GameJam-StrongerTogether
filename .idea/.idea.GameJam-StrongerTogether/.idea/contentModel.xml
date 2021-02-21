@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\austi\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\austi\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_GameJam-StrongerTogether.-933217975.00" t="ExcludeRecursive" />
-    <e p="C:\Users\austi\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
-    <e p="X:\Repositorys\GameJam-StrongerTogether" t="IncludeRecursive">
+    <e p="C:\Dev\GameJam-StrongerTogether" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="PlayerHit.cs" t="Include" />
+        <e p="playerWIn.cs" t="Include" />
         <e p="PlaySoundThenDie.cs" t="Include" />
         <e p="Scenes" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
@@ -18,6 +16,7 @@
           <e p="abilityManager.cs" t="Include" />
           <e p="bullet.cs" t="Include" />
           <e p="C4Script.cs" t="Include" />
+          <e p="callWin.cs" t="Include" />
           <e p="chargeEnemyAI.cs" t="Include" />
           <e p="enemyBullet.cs" t="Include" />
           <e p="enemyDamage.cs" t="Include" />
@@ -25,6 +24,7 @@
           <e p="explosionScript.cs" t="Include" />
           <e p="gruntEnemyAI.cs" t="Include" />
           <e p="healthBar.cs" t="Include" />
+          <e p="lose.cs" t="Include" />
           <e p="nanobotAI.cs" t="Include" />
           <e p="nanobotSystem.cs" t="Include" />
           <e p="orbScript.cs" t="Include" />
@@ -38,6 +38,7 @@
           <e p="rounds.cs" t="Include" />
           <e p="Special.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
+          <e p="win.cs" t="Include" />
         </e>
         <e p="Sprite" t="Include">
           <e p="Isometric_Tiles_Pixel_Art" t="Include">
@@ -129,5 +130,7 @@
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
+    <e p="C:\Users\nikhi\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\nikhi\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_GameJam-StrongerTogether.1310527530.00" t="ExcludeRecursive" />
   </component>
 </project>
