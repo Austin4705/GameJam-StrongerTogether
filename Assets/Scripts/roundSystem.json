@@ -2,22 +2,36 @@
   "eachRound": [
     {
       "roundID": 1,
-      "grunt": 5,
-      "roundTime": 15,
+      "grunt": 10,
+      "roundTime": 20,
       "special": [
-        {"type": 2, "time": 2, "amount": 1},
-        {"type": 3, "time": 5, "amount": 1},
-        {"type": 2, "time": 10, "amount": 1}
+        {"type": 3, "time": 9, "amount": 1},
+        {"type": 3, "time": 10, "amount": 1}
       ]
     },
     {
       "roundID": 2,
-      "grunt": 2,
-      "roundTime": 10,
+      "grunt": 20,
+      "roundTime": 40,
       "special": [
-        {"type": 1, "time": 1, "amount": 1},
-        {"type": 2, "time": 4, "amount": 1},
-        {"type": 1, "time": 6, "amount": 1}
+        {"type": 3, "time": 2, "amount": 1},
+        {"type": 3, "time": 4, "amount": 1},
+        {"type": 3, "time": 6, "amount": 1},
+        {"type": 3, "time": 8, "amount": 1},
+        {"type": 3, "time": 10, "amount": 1},
+        {"type": 3, "time": 12, "amount": 1},
+        {"type": 3, "time": 14, "amount": 1},
+        {"type": 3, "time": 26, "amount": 1},
+        {"type": 2, "time:": 35, "amount": 1}
+      ]
+    },
+    {
+      "roundID": 3,
+      "grunt": 40,
+      "roundTime": 40,
+      "special": [
+      {"type": 2, "time": 10, "amount": 1},
+      {"type": 2, "time": 11, "amount": 1}
       ]
     }
   ] 

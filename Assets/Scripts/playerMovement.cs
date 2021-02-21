@@ -28,6 +28,9 @@ public class playerMovement : MonoBehaviour
     public Transform backRight;
     public Transform right;
     public Transform frontRight;
+
+    public GameObject audioPlayer;
+    public AudioClip shootSound;
     
     void Start()
     {
@@ -108,6 +111,8 @@ public class playerMovement : MonoBehaviour
         {
             if (Input.GetButton("Jump"))
             {
+                GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+                sound.GetComponent<PlaySoundThenDie>().clip = shootSound;
                 lastShot = Time.time;
                 GameObject newObj = GameObject.Instantiate(bullet, gunTip.transform.position,
                     gunTip.transform.rotation);

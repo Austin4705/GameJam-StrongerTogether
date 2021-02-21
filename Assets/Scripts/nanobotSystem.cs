@@ -16,6 +16,12 @@ public class nanobotSystem : MonoBehaviour
     public float invinsibilityTimer = 0;
     public float time;
     public GameObject hitEffect;
+
+    public GameObject audioPlayer;
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    public AudioClip unlockAbilitySound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +45,9 @@ public class nanobotSystem : MonoBehaviour
         if (Time.time - invinsibilityTimer > hitCooldown)
         {
             nanobots = nanobots - damage;
+
+            GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+            sound.GetComponent<PlaySoundThenDie>().clip = hitSound;
 
             GameObject newObj = GameObject.Instantiate(hitEffect, gameObject.transform.position,
                 gameObject.transform.rotation);
@@ -82,8 +91,12 @@ public class nanobotSystem : MonoBehaviour
         {
             if (nanobots - abilityPrice[abilityStatus] > 0 && abilityStatus <= 4)
             {
-                Debug.Log("Unlocking Ability");
+                //Debug.Log("Unlocking Ability");
                 nanobots = nanobots - abilityPrice[abilityStatus];
+
+                GameObject sound = GameObject.Instantiate(audioPlayer, transform.position, transform.rotation);
+                sound.GetComponent<PlaySoundThenDie>().clip = unlockAbilitySound;
+
                 switch (abilityStatus)
                 {
                     case 0:
@@ -105,19 +118,23 @@ public class nanobotSystem : MonoBehaviour
     }
     public void unlockC4()
     {
+        abilityManager.Instance.C4Timer = Time.time;
         abilityManager.Instance.c4Unlocked = true;
     }
     public void unlockBulletPiercing()
     {
+        abilityManager.Instance.piercingTimer = Time.time;
         abilityManager.Instance.piercingUnlocked = true;
     }
     public void unlockMachineGun()
     {
+        abilityManager.Instance.machineGunTimer = Time.time;
         abilityManager.Instance.machineGunUnlocked = true;
     }
 
     public void unlockLaserOrb()
     {
+        abilityManager.Instance.orbTimer = Time.time;
         abilityManager.Instance.orbUnlocked = true;
     }
     
@@ -128,6 +145,7 @@ public class nanobotSystem : MonoBehaviour
 
     public void kill()
     {
+
         Destroy(player);
     }
 
@@ -146,10 +164,13 @@ public class nanobotSystem : MonoBehaviour
                 Destroy(other.gameObject);
             }
         }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
         if (other.gameObject.tag == "Explosion")
         {
             Damage(other.gameObject.GetComponent<explosionScript>().playerDamage);
-            Debug.Log("Hit By Explosion");
         }
     }
 }
