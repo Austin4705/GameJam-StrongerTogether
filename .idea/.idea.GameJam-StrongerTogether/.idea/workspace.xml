@@ -19,7 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="" />
+    <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
