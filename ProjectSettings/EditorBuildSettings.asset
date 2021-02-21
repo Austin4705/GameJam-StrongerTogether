@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pause.unity
     guid: 421510056326bba48b968deb083a263e
+  - enabled: 1
+    path: Assets/Scenes/winScreen.unity
+    guid: 0878b0cc1fc91e24bab03fe6f63b38d4
+  - enabled: 1
+    path: Assets/Scenes/loseScreen.unity
+    guid: fe8cf0cb5b45ea74a8fd008faa678e26
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: b4c3b454ef0e042468f44b07a98bb143,
       type: 2}
