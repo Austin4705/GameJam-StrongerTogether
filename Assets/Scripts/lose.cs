@@ -11,7 +11,7 @@ public class lose : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 6;
+        score = scorePass.score;
         text.text = score.ToString();
     }
 

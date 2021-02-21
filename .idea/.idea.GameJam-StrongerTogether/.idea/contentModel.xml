@@ -41,6 +41,7 @@
           <e p="round.cs" t="Include" />
           <e p="roundManager.cs" t="Include" />
           <e p="rounds.cs" t="Include" />
+          <e p="scorePass.cs" t="Include" />
           <e p="Special.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
           <e p="win.cs" t="Include" />

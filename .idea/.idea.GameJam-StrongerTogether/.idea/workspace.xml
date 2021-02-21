@@ -21,9 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/callWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/callWin.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/lose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/lose.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/win.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/win.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +39,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/rangedEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/roundSystem.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Special.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/lose.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/win.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/callWin.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/orbScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/bullet.cs" root0="FORCE_HIGHLIGHTING" />
@@ -56,6 +59,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/0d/ae84590c/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/a0/a35b83fb/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/enemyHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/scorePass.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/bd/80c54866/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/explosionScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -91,6 +95,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemyHealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/callWin.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/lose.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/win.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/scorePass.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
       </list>
     </option>

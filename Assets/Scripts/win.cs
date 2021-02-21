@@ -11,7 +11,7 @@ public class win : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        score = 7;
+        score = scorePass.score;
         text.text = score.ToString();
     }
 

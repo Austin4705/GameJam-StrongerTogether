@@ -26,6 +26,7 @@ public class nanobotSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        scorePass.score = 0;
         nanobots = startingBots;
         invinsibilityTimer = Time.time;
     }
@@ -148,6 +149,11 @@ public class nanobotSystem : MonoBehaviour
     {
         float score = UIManager.Instance.score;
         bool won;
+        scorePass.score = score;
+        if (scorePass.score > scorePass.highscore)
+        {
+            scorePass.highscore = scorePass.score;
+        }
         if (RoundManager.GetComponent<roundManager>().roundNumDisplay >= 20)
         {
             won = true;
