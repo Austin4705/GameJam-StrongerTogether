@@ -20,10 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyCharge.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyGrunt.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyRanged.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/roundManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/0d/ae84590c/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/a0/a35b83fb/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/enemyHealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UIManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/bd/80c54866/Input.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/explosionScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,19 +78,20 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/rangedEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/readJSON.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerMovement.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" />
         <option value="$PROJECT_DIR$/Assets/Scripts/C4Script.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/abilityManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/explosionScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/orbScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/gruntEnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/chargeEnemyAI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyDamage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyHealthBar.cs" />
       </list>
     </option>
   </component>
@@ -258,9 +262,10 @@
     </state>
     <state x="-1304" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613782871776" />
     <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613503266060" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613545304379">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1613896415641">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1297" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1613896415641" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1613545304379" />
   </component>
 </project>

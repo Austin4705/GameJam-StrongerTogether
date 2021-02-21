@@ -21,6 +21,7 @@
           <e p="chargeEnemyAI.cs" t="Include" />
           <e p="enemyBullet.cs" t="Include" />
           <e p="enemyDamage.cs" t="Include" />
+          <e p="enemyHealthBar.cs" t="Include" />
           <e p="enemySpawner.cs" t="Include" />
           <e p="explosionScript.cs" t="Include" />
           <e p="gruntEnemyAI.cs" t="Include" />
