@@ -20,6 +20,7 @@
           <e p="backToMenu.cs" t="Include" />
           <e p="bullet.cs" t="Include" />
           <e p="C4Script.cs" t="Include" />
+          <e p="callWin.cs" t="Include" />
           <e p="chargeEnemyAI.cs" t="Include" />
           <e p="enemyBullet.cs" t="Include" />
           <e p="enemyDamage.cs" t="Include" />
