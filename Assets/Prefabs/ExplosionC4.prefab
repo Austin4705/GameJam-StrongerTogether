@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDamage: 300
-  playerDamage: 4
+  playerDamage: 0
   stayAliveTime: 0.48
   liveTimer: 0
 --- !u!50 &-8610294562158494468
