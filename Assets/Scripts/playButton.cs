@@ -6,16 +6,14 @@ using UnityEngine.EventSystems;
 
 public class playButton : MonoBehaviour
 {
-    //public audio
+
     public void play()
     {
+        Debug.LogError("stressed");
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
-    private void OnMouseEnter()
-    {
-        
-    }
 
     public void quit()
     {
