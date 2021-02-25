@@ -24,6 +24,11 @@ public class enemyBullet : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            nanobotSystem.Instance.Damage(1);
+            Destroy(gameObject);
+        }
+        if (other.gameObject.tag != "Enemy")
+        {
             Destroy(gameObject);
         }
         if (other.gameObject.tag == "Wall")

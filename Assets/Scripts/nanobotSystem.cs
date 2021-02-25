@@ -182,6 +182,8 @@ public class nanobotSystem : MonoBehaviour
             {
                 Destroy(other.gameObject);
             }
+            Debug.Log("collision");
+            
         }
     }
 

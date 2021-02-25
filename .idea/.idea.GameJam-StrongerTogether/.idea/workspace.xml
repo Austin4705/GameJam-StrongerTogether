@@ -20,8 +20,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="48826ede-b6ff-4603-b455-4aa81a1049d1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameJam-StrongerTogether/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/EnemyBullet.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/enemyBullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/enemyBullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/masterSpawnerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/nanobotAI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/enemyBullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/rangedEnemyAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/enemySpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/readJSON.cs" />
@@ -95,9 +100,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/lose.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/win.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/scorePass.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/playButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/roundSystem.json" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/nanobotSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/enemyBullet.cs" />
       </list>
     </option>
   </component>
