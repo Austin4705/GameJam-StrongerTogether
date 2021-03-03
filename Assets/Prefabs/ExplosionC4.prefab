@@ -113,7 +113,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60576a49a7ffc7a4ba9faef2172787b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDamage: 300
+  enemyDamage: 100
   playerDamage: 0
   stayAliveTime: 0.48
   liveTimer: 0

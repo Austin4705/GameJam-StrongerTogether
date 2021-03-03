@@ -23,6 +23,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/explosionScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/pauseGame.cs" />
       </list>
     </option>
   </component>
@@ -47,15 +48,22 @@
       <option name="presentableId" value="Default" />
       <updated>1614755767138</updated>
       <workItem from="1614755771268" duration="767000" />
+      <workItem from="1614810539943" duration="291000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="386" y="303" width="672" height="678" key="search.everywhere.popup" timestamp="1614810737020">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="386" y="303" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1614810737020" />
   </component>
 </project>

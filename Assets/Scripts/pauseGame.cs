@@ -5,11 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class pauseGame : MonoBehaviour
 {
+	public bool isPaused = false;
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            if(isPaused) {
+			Time.timeScale = 1f;
+			isPaused = false;
+			}
+			else {
+			Time.timeScale = 0f;
+			isPaused = true;
+			}
         }
     }
 }
