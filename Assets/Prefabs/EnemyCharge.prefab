@@ -158,8 +158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d7ddb07385d32a4280e90e9c290c536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
-  maxHealth: 300
+  health: 600
+  maxHealth: 600
   playerDamage: 2
   nanobotsOnDeath: 10
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
