@@ -21,6 +21,7 @@ public class enemySpawner : MonoBehaviour
     public GameObject enemyGrunt;
     public GameObject enemyCharge;
     public GameObject enemyRanged;
+    public GameObject enemyBoss;
     public GameObject enemyHierarchy;
     
     // Start is called before the first frame update
@@ -54,6 +55,11 @@ public class enemySpawner : MonoBehaviour
     public void spawnRanged()
     {
         spawnEnemies(enemyRanged);
+    }
+
+    public void spawnBoss()
+    {
+        spawnEnemies(enemyBoss);
     }
     #region enemyCalculation 
     private void spawnEnemies(GameObject enemy)

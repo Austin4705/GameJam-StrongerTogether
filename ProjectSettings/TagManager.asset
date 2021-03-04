@@ -14,6 +14,7 @@ TagManager:
   - orbExplosionStorage
   - C4ExplosionStorage
   - Explosion
+  - Boss
   layers:
   - Default
   - TransparentFX

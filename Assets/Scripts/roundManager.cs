@@ -102,6 +102,10 @@ public class roundManager : MonoBehaviour
                                 //Debug.Log("Spawning Ranged");
                                 thisGameObject.GetComponent<enemySpawner>().spawnRanged();
                                 break;
+							case 4:
+                                //Debug.Log("Spawning Ranged");
+                                thisGameObject.GetComponent<enemySpawner>().spawnBoss();
+                                break;
                         }
                         //Debug.Log("Spawned Special");
                     }

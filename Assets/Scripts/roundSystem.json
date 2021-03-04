@@ -506,6 +506,7 @@
         {"type": 3, "time": 145, "amount": 1},
         {"type": 3, "time": 150, "amount": 1},
         {"type": 3, "time": 155, "amount": 1},
+        {"type": 4, "time": 155, "amount": 1},
         {"type": 3, "time": 160, "amount": 1},
         {"type": 2, "time": 161, "amount": 1},
         {"type": 3, "time": 165, "amount": 1},

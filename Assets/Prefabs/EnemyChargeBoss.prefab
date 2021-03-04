@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7345697008888428605}
   m_Layer: 11
   m_Name: New Sprite
-  m_TagString: Untagged
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -163,7 +163,7 @@ MonoBehaviour:
   playerDamage: 10
   nanobotsOnDeath: 10
   nanobot: {fileID: 5415374284267376014, guid: cddfd388becbec243aaa0b2843c9d06e, type: 3}
-  score: 6000
+  score: 15000
   dieOnContact: 0
   audioPlayer: {fileID: 2653383766947879190, guid: c1c2efacfc54525409d1e5cc1eaadac8,
     type: 3}
