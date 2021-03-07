@@ -7,6 +7,7 @@ public class round
 {
     public int roundID;
     public int grunt;
+    public int ranged;
     public float roundTime;
     public Special[] special;
 }

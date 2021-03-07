@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/.idea/.idea.GameJam - Stronger Together.iml" filepath="$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/.idea/.idea.GameJam - Stronger Together.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/riderModule.iml" filepath="$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/riderModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/.idea/riderModule.iml" filepath="$PROJECT_DIR$/.idea/.idea.GameJam - Stronger Together/.idea/riderModule.iml" />
     </modules>
   </component>
 </project>

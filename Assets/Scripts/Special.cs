@@ -7,5 +7,4 @@ public class Special
 {
     public int type;
     public float time;
-    public int amount;
 }

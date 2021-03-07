@@ -7,6 +7,7 @@ public class roundManager : MonoBehaviour
 {
     public bool devSpawnGrunt = true;
     public bool devSpawnSpecial = true;
+    public bool debSpawnRanged = true;
     
     public float roundTime;
     public rounds level;
@@ -15,9 +16,14 @@ public class roundManager : MonoBehaviour
     private round currentRound;
     private bool newRound;
     public float waitTimeBetweenRounds = 10;
+    
     public float gruntsPerSec;
-    public float totalRoundTime;
     public float gruntTime;
+
+    public float rangedPerSec;
+    public float rangedTime;
+    
+    public float totalRoundTime;
     public GameObject thisGameObject;
     public Special specialEnemy;
     private int specialEnemyAt;
@@ -61,6 +67,8 @@ public class roundManager : MonoBehaviour
             roundTime = Time.time;
             
             gruntsPerSec = currentRound.grunt / totalRoundTime;
+            rangedPerSec = currentRound.ranged / totalRoundTime;
+            
             totalSpecialEnemies = currentRound.special.Length;
             specialEnemyAt = 0;
             if (totalSpecialEnemies > 0)
@@ -79,6 +87,15 @@ public class roundManager : MonoBehaviour
                     thisGameObject.GetComponent<enemySpawner>().spawnGrunt();
                 }
                 gruntTime = Time.time;
+            }
+            if (Time.time - rangedTime > 1 / rangedPerSec)
+            {
+                if (devSpawnGrunt)
+                {
+                    //Debug.Log("Spawning Grunt");
+                    thisGameObject.GetComponent<enemySpawner>().spawnRanged();
+                }
+                rangedTime = Time.time;
             }
 
             if (specialEnemy != null)
@@ -165,8 +182,7 @@ public class roundManager : MonoBehaviour
             {
                 Debug.Log(
                     "type: " + special.type + " " + 
-                    "time: " + special.time + " " +
-                    "amount: " + special.amount + " "
+                    "time: " + special.time + " "
                 );
             }
         }
