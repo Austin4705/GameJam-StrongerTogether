@@ -1106,6 +1106,8 @@ MonoBehaviour:
     type: 3}
   enemyRanged: {fileID: 2606150983452991579, guid: 91ca6f2f984c0324c9d8f6fbad228327,
     type: 3}
+  enemyBoss: {fileID: 7760252947964440107, guid: f827dc1ab4eee5d4c962d41ad9b8eef0,
+    type: 3}
   enemyHierarchy: {fileID: 986622385}
 --- !u!114 &561673807
 MonoBehaviour:
@@ -1121,6 +1123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   devSpawnGrunt: 1
   devSpawnSpecial: 1
+  debSpawnRanged: 1
   roundTime: 0
   level:
     eachRound: []
@@ -1128,13 +1131,14 @@ MonoBehaviour:
   currentRoundNum: 0
   waitTimeBetweenRounds: 10
   gruntsPerSec: 0
-  totalRoundTime: 0
   gruntTime: 0
+  rangedPerSec: 0
+  rangedTime: 0
+  totalRoundTime: 0
   thisGameObject: {fileID: 561673804}
   specialEnemy:
     type: 0
     time: 0
-    amount: 0
   totalSpecialEnemies: 0
   jsonFile: {fileID: 4900000, guid: bfdfff99ff5b82e43aa0e4a54bb28268, type: 3}
   time: 0

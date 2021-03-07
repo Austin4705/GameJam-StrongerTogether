@@ -90,7 +90,7 @@ public class roundManager : MonoBehaviour
             }
             if (Time.time - rangedTime > 1 / rangedPerSec)
             {
-                if (devSpawnGrunt)
+                if (debSpawnRanged)
                 {
                     //Debug.Log("Spawning Grunt");
                     thisGameObject.GetComponent<enemySpawner>().spawnRanged();
